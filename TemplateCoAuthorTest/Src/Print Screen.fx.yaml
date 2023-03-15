@@ -1,0 +1,78 @@
+"'Print Screen' As screen.'printableLayout_A4Portrait_ver1.0'":
+    Fill: =Color.Transparent
+    Height: =1056
+    Width: =816
+
+    conRightMenu_PT As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =Color.Transparent
+        Height: =48
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutGap: =5
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =20
+        Visible: =Not('Print Screen'.Printing)
+        Width: =Parent.Width
+        Y: =16
+        ZIndex: =3
+
+        "CommandBar_PT As 'Fluent Command Bar (1.0.19)'.pcfdataset":
+            DisplayMode: =DisplayMode.Edit
+            Height: =Parent.Height
+            Items: |-
+                =Table(
+                    
+                    {
+                        ItemKey: "back",
+                        ItemDisplayName: "Back",
+                        ItemIconName: "back"
+                    },{
+                        ItemKey: "print",
+                        ItemDisplayName: "Print",
+                        ItemIconName: "print"
+                    }
+                )
+                  
+            LayoutMinHeight: =200
+            LayoutMinWidth: =200
+            OnSelect: |-
+                = Switch( Self.Selected.ItemKey,
+                    "back", Back(),
+                    "print", Print()
+                  )
+            Theme: =AppThemeJson
+            Visible: =Not('Print Screen'.Printing)
+            Width: =200
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+    htmBody_PT As htmlViewer:
+        Font: =Font.Arial
+        Height: =Parent.Height-Self.Y-144
+        HtmlText: |-
+            ="
+            <div Style='line-height:1.5;'>
+            <p>Date<br><br>
+            <p>"&varCurrentContact.FirstNm&" "&varCurrentContact.LastNm&"<br>
+            Address Line 1<br>
+            Address Line 1<br>
+            Address Line 3<br><br>
+            
+            Dear "&varCurrentContact.FirstNm&",</p>
+            
+            <p>Introduction...</p><br><br><br>
+            <p>Content...</p><br><br><br>
+            <p>Conclusion...</p><br><br><br>
+            <p>Name<br>
+            Title</p>
+            Encl.: 
+            "
+        Width: =Parent.Width-Self.X*2
+        X: =96
+        Y: =160
+        ZIndex: =4
+
+    cmpLayoutHeaderLetter_PT As cmpLayoutHeaderLetter:
+        Y: =64
+        ZIndex: =5
+

@@ -1,0 +1,148 @@
+cmpStylesTNCColors As CanvasComponent:
+    AllColors: |
+        =Table(
+            {Type: "Preferred", Colors:"Oak Green",RGBAcode:RGBA(0,112,60,1),RGBAText:"RGBA(0,112,60,1)" ,HEX:"#00703c"},
+            {Type: "Preferred", Colors:"Leaf Green",RGBAcode:RGBA(73,169,66,1),RGBAText:"RGBA(73,169,66,1)" ,HEX:"#49a942"},
+            {Type: "Preferred", Colors:"Spring",RGBAcode:RGBA(160,192,77,1),RGBAText:"RGBA(160,192,77,1)" ,HEX:"#a0c04d"},
+            {Type: "Preferred", Colors:"Indigo",RGBAcode:RGBA(35,72,122,1),RGBAText:"RGBA(35,72,122,1)" ,HEX:"#23487a"},
+            {Type: "Preferred", Colors:"Lake",RGBAcode:RGBA(0,150,214,1),RGBAText:"RGBA(0,150,214,1)" ,HEX:"#0096d6"},
+            {Type: "Preferred", Colors:"Plum",RGBAcode:RGBA(144,33,74,1),RGBAText:"RGBA(144,33,74,1)" ,HEX:"#90214a"},
+            {Type: "Preferred", Colors:"Crimson",RGBAcode:RGBA(197,53,28,1),RGBAText:"RGBA(197,53,28,1)" ,HEX:"#c5351c"},
+            {Type: "Preferred", Colors:"Red Rock",RGBAcode:RGBA(243,144,29,1),RGBAText:"RGBA(243,144,29,1)" ,HEX:"#f3901d"},
+            {Type: "Preferred", Colors:"Yellow Field",RGBAcode:RGBA(255,225,79,1),RGBAText:"RGBA(255,225,79,1)" ,HEX:"#ffe14f"},
+            {Type: "Supplemental", Colors:"Mallard",RGBAcode:RGBA(0,121,50,1),RGBAText:"RGBA(0,121,50,1)" ,HEX:"#007932"},
+            {Type: "Supplemental", Colors:"Clover",RGBAcode:RGBA(70,129,43,1),RGBAText:"RGBA(70,129,43,1)" ,HEX:"#46812b"},
+            {Type: "Supplemental", Colors:"Spruce",RGBAcode:RGBA(77,99,45,1),RGBAText:"RGBA(77,99,45,1)" ,HEX:"#4d632d"},
+            {Type: "Supplemental", Colors:"Everglade",RGBAcode:RGBA(94,136,39,1),RGBAText:"RGBA(94,136,39,1)" ,HEX:"#5e8827"},
+            {Type: "Supplemental", Colors:"Moss",RGBAcode:RGBA(106,138,34,1),RGBAText:"RGBA(106,138,34,1)" ,HEX:"#6a8a22"},
+            {Type: "Supplemental", Colors:"Olive",RGBAcode:RGBA(115,124,41,1),RGBAText:"RGBA(115,24,41,1)" ,HEX:"#737c29"},
+            {Type: "Supplemental", Colors:"Acadia",RGBAcode:RGBA(149,186,121,1),RGBAText:"RGBA(149,186,121,1)" ,HEX:"#95ba79"},
+            {Type: "Supplemental", Colors:"Lime",RGBAcode:RGBA(205,201,15,1),RGBAText:"RGBA(205,201,15,1)" ,HEX:"#cdc90f"},
+            {Type: "Supplemental", Colors:"Deep Waters",RGBAcode:RGBA(0,83,135,1),RGBAText:"RGBA(0,83,135,1)" ,HEX:"#005387"},
+            {Type: "Supplemental", Colors:"True Blue",RGBAcode:RGBA(27,117,188,1),RGBAText:"RGBA(27,117,188,1)" ,HEX:"#1b75bc"},
+            {Type: "Supplemental", Colors:"Cirrus",RGBAcode:RGBA(58,137,180,1),RGBAText:"RGBA(58,137,180,1)" ,HEX:"#3a89b4"},
+            {Type: "Supplemental", Colors:"Frost",RGBAcode:RGBA(94,148,182,1),RGBAText:"RGBA(94,148,182,1)" ,HEX:"#5e94b6"},
+            {Type: "Supplemental", Colors:"Marine",RGBAcode:RGBA(0,158,203,1),RGBAText:"RGBA(0,158,203,1)" ,HEX:"#009ecb"},
+            {Type: "Supplemental", Colors:"Aqua",RGBAcode:RGBA(0,160,175,1),RGBAText:"RGBA(0,160,175,1)" ,HEX:"#00a0af"},
+            {Type: "Supplemental", Colors:"Glacier",RGBAcode:RGBA(183,222,224,1),RGBAText:"RGBA(183,222,224,1)" ,HEX:"#b7dee0"},
+            {Type: "Supplemental", Colors:"Iris",RGBAcode:RGBA(70,22,107,1),RGBAText:"RGBA(70,22,107,1)" ,HEX:"#46166b"},
+            {Type: "Supplemental", Colors:"Carnelian",RGBAcode:RGBA(138,47,29,1),RGBAText:"RGBA(138,47,29,1)" ,HEX:"#8a2f1d"},
+            {Type: "Supplemental", Colors:"Rust",RGBAcode:RGBA(201,92,26,1),RGBAText:"RGBA(201,92,26,1)" ,HEX:"#c95c1a"},
+            {Type: "Supplemental", Colors:"Ochre",RGBAcode:RGBA(168,135,1,1),RGBAText:"RGBA(168,135,1,1)" ,HEX:"#a88701"},
+            {Type: "Supplemental", Colors:"Nutmeg",RGBAcode:RGBA(180,135,36,1),RGBAText:"RGBA(180,135,36,1)" ,HEX:"#b48724"},
+            {Type: "Supplemental", Colors:"Butternut",RGBAcode:RGBA(227,151,23,1),RGBAText:"RGBA(227,151,23,1)" ,HEX:"#e39717"},
+            {Type: "Supplemental", Colors:"Gold",RGBAcode:RGBA(230,177,32,1),RGBAText:"RGBA(230,177,32,1)" ,HEX:"#e6b120"},
+            {Type: "Neutral", Colors:"Cocoa",RGBAcode:RGBA(98,60,37,1),RGBAText:"RGBA(98,60,37,1)" ,HEX:"#623c25"},
+            {Type: "Neutral", Colors:"Canyon",RGBAcode:RGBA(128,86,27,1),RGBAText:"RGBA(128,86,27,1)" ,HEX:"#80561b"},
+            {Type: "Neutral", Colors:"Storm",RGBAcode:RGBA(126,106,101,1),RGBAText:"RGBA(126,106,101,1)" ,HEX:"#7e6a65"},
+            {Type: "Neutral", Colors:"Driftwood",RGBAcode:RGBA(210,191,170,1),RGBAText:"RGBA(210,191,170,1)" ,HEX:"#d2bfaa"},
+            {Type: "Neutral", Colors:"Beach",RGBAcode:RGBA(218,199,146,1),RGBAText:"RGBA(218,199,146,1)" ,HEX:"#dac792"},
+            {Type: "Neutral", Colors:"Icicle",RGBAcode:RGBA(228,230,215,1),RGBAText:"RGBA(228,230,215,1)" ,HEX:"#e4e6d7"},
+            {Type: "Neutral", Colors:"Mudstone",RGBAcode:RGBA(152,148,130,1),RGBAText:"RGBA(152,148,130,1)" ,HEX:"#989482"},
+            {Type: "Neutral", Colors:"Sandstone",RGBAcode:RGBA(247,231,201,1),RGBAText:"RGBA(247,231,201,1)" ,HEX:"#f7e7c9"},
+            {Type: "Neutral", Colors:"Dry Sage",RGBAcode:RGBA(175,176,135,1),RGBAText:"RGBA(175,176,135,1)" ,HEX:"#afb087"},
+            {Type: "SharePoint", Colors:"SharePointMenuGray",RGBAcode:RGBA(64,64,65,1),RGBAText:"RGBA(64,64,65,1)" ,HEX:"#404041"},
+            {Type: "SharePoint", Colors:"FluentGray",RGBAcode:RGBA(243,243,241,1),RGBAText:"RGBA(243,243,241,1)" ,HEX:"#f3f3f1"},
+            {Type: "SharePoint", Colors:"FluentGrayHover",RGBAcode:RGBA(243,243,241,.4),RGBAText:"RGBA(243,243,241,.4)" ,HEX:"#f3f3f1"}
+        )
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =1200
+    Width: =1920
+    X: =0
+    Y: =0
+    ZIndex: =3
+
+    "galColors As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        AccessibleLabel: ="Gallery of Supplemental Colors"
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Height: =Parent.Height
+        Items: |
+            =cmpStylesTNCColors.AllColors
+        Layout: =Layout.Vertical
+        TabIndex: =0
+        TemplatePadding: =0
+        TemplateSize: =74
+        Width: =Parent.Width
+        WrapCount: =6
+        ZIndex: =1
+
+        imgColor_Colors As image:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =ThisItem.RGBAcode
+            Height: =40
+            Image: =
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =35
+            RadiusBottomRight: =35
+            RadiusTopLeft: =35
+            RadiusTopRight: =35
+            Width: =40
+            X: =15
+            Y: =12
+            ZIndex: =1
+
+        lblColorName_Colors As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: ="'Whitney','Ariel'"
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Colors
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - imgColor_Colors.Width - 104
+            X: =imgColor_Colors.X + imgColor_Colors.Width + 24
+            Y: =8
+            ZIndex: =2
+
+        lblColorHex_Colors As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: ="'Whitney','Ariel'"
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.HEX
+            VerticalAlign: =VerticalAlign.Top
+            Width: =lblColorName_Colors.Width
+            X: =lblColorName_Colors.X
+            Y: =lblColorName_Colors.Y + lblColorName_Colors.Height
+            ZIndex: =3
+
+        recSeparator_Colors As rectangle:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        lblColorRGBA_Colors As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: ="'Whitney','Ariel'"
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.RGBAText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =lblColorName_Colors.Width
+            X: =lblColorName_Colors.X
+            Y: =lblColorHex_Colors.Y + lblColorHex_Colors.Height 
+            ZIndex: =6
+

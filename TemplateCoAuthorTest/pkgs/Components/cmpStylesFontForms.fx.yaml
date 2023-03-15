@@ -1,0 +1,126 @@
+cmpStylesFontForms As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    FontBody: |-
+        ={
+            Font:"'Segoe UI','Arial'",
+            FontWeight:FontWeight.Semibold,
+            Color:cmpStylesFontForms.Theme.palette.RGBANeutralPrimary,
+            Size1: 16,
+            Size2: 14,
+            Size3: 13,
+            Size4: 11,
+            Size5: 8
+            }
+    Height: =402
+    Theme: |-
+        =//AppTheme
+        {
+            palette: {
+                
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                )
+            }
+        }
+    Width: =96
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    lblSize1_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =cmpStylesFontForms.Theme.palette.RGBANeutralPrimary
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =cmpStylesFontForms.FontBody.Font
+        FontWeight: =cmpStylesFontForms.FontBody.FontWeight
+        Height: =70
+        PaddingLeft: =0
+        Size: =cmpStylesFontForms.FontBody.Size1
+        Text: |-
+            ="1: Text"
+        Width: =96
+        Y: =52
+        ZIndex: =1
+
+    lblSize2_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =cmpStylesFontForms.Theme.palette.RGBANeutralPrimary
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =cmpStylesFontForms.FontBody.Font
+        FontWeight: =cmpStylesFontForms.FontBody.FontWeight
+        Height: =70
+        PaddingLeft: =0
+        Size: =cmpStylesFontForms.FontBody.Size2
+        Text: |-
+            ="2: Text"
+        Width: =96
+        Y: =122
+        ZIndex: =2
+
+    lblSize3_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =cmpStylesFontForms.Theme.palette.RGBANeutralPrimary
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =cmpStylesFontForms.FontBody.Font
+        FontWeight: =cmpStylesFontForms.FontBody.FontWeight
+        Height: =70
+        PaddingLeft: =0
+        Size: =cmpStylesFontForms.FontBody.Size3
+        Text: |-
+            ="3: Text"
+        Width: =96
+        Y: =192
+        ZIndex: =3
+
+    lblSize4_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =cmpStylesFontForms.Theme.palette.RGBANeutralPrimary
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =cmpStylesFontForms.FontBody.Font
+        FontWeight: =cmpStylesFontForms.FontBody.FontWeight
+        Height: =70
+        PaddingLeft: =0
+        Size: =cmpStylesFontForms.FontBody.Size4
+        Text: |-
+            ="4: Text"
+        Width: =96
+        Y: =262
+        ZIndex: =4
+
+    lblSize5_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =cmpStylesFontForms.Theme.palette.RGBANeutralPrimary
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =cmpStylesFontForms.FontBody.Font
+        FontWeight: =cmpStylesFontForms.FontBody.FontWeight
+        Height: =70
+        PaddingLeft: =0
+        Size: =cmpStylesFontForms.FontBody.Size5
+        Text: |-
+            ="5: Text"
+        Width: =96
+        Y: =332
+        ZIndex: =5
+
+    lblTitle_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =cmpStylesFontForms.Theme.palette.RGBANeutralPrimary
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =cmpStylesFontForms.FontBody.Font
+        FontWeight: =FontWeight.Bold
+        Height: =52
+        PaddingLeft: =0
+        Size: =cmpStylesFontForms.FontBody.Size4
+        Text: ="FontForms"
+        Width: =96
+        ZIndex: =6
+

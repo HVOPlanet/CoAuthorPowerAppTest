@@ -1,0 +1,112 @@
+[
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 7,
+    "LibraryId": "adda98bc-59d8-45f1-92ae-a0dffd439b2d",
+    "LibraryLogicalName": "witco_cmplibrarylayout_64ecc",
+    "LibraryVersion": "2023-02-08T03:43:47Z",
+    "OriginalComponentDefinitionTemplateId": "1dd22eeeee6246108c8def85443f306b",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-02-08T03:43:51.23+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 0,
+    "LibraryId": "adda98bc-59d8-45f1-92ae-a0dffd439b2d",
+    "LibraryLogicalName": "witco_cmplibrarylayout_64ecc",
+    "LibraryVersion": "2023-02-08T03:43:47Z",
+    "OriginalComponentDefinitionTemplateId": "e649ba4f067c448d98ca8c1d3ee887eb",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-02-08T03:43:51.23+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "599dc92f-73ce-4e50-a680-f343c1b309e9",
+    "LibraryLogicalName": "witco_cmplibrarystyles_2f2c3",
+    "LibraryVersion": "2023-01-22T03:02:37Z",
+    "OriginalComponentDefinitionTemplateId": "66eb99631045432dbece6283854fcc60",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-01-22T03:03:38.956+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "599dc92f-73ce-4e50-a680-f343c1b309e9",
+    "LibraryLogicalName": "witco_cmplibrarystyles_2f2c3",
+    "LibraryVersion": "2023-01-22T03:02:37Z",
+    "OriginalComponentDefinitionTemplateId": "794c02491cfb48639712137bced315ed",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-01-22T03:03:38.956+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "599dc92f-73ce-4e50-a680-f343c1b309e9",
+    "LibraryLogicalName": "witco_cmplibrarystyles_2f2c3",
+    "LibraryVersion": "2023-01-22T03:02:37Z",
+    "OriginalComponentDefinitionTemplateId": "8702b824fa68494baa9be690e9892867",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-01-22T03:03:38.956+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "599dc92f-73ce-4e50-a680-f343c1b309e9",
+    "LibraryLogicalName": "witco_cmplibrarystyles_2f2c3",
+    "LibraryVersion": "2023-01-22T03:02:37Z",
+    "OriginalComponentDefinitionTemplateId": "b16173df219b4d3ab1e36e107e5e6570",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-01-22T03:03:38.956+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 6,
+    "LibraryId": "adda98bc-59d8-45f1-92ae-a0dffd439b2d",
+    "LibraryLogicalName": "witco_cmplibrarylayout_64ecc",
+    "LibraryVersion": "2023-02-08T03:43:47Z",
+    "OriginalComponentDefinitionTemplateId": "9ca80dbebd284395b88c44f54804730f",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-02-08T03:43:51.23+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "adda98bc-59d8-45f1-92ae-a0dffd439b2d",
+    "LibraryLogicalName": "witco_cmplibrarylayout_64ecc",
+    "LibraryVersion": "2023-02-08T03:43:47Z",
+    "OriginalComponentDefinitionTemplateId": "94d65f22af824f6ea46b7b979f6afe2a",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-02-08T03:43:51.23+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 18,
+    "LibraryId": "e39446dc-150d-4b8c-b90b-934983d2e616",
+    "LibraryLogicalName": "witco_cmplibraryicons_bf639",
+    "LibraryVersion": "2023-01-22T04:25:14Z",
+    "OriginalComponentDefinitionTemplateId": "07a8f96ab96c4957b21cc5d3b8861199",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-01-22T04:25:16.643+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "e39446dc-150d-4b8c-b90b-934983d2e616",
+    "LibraryLogicalName": "witco_cmplibraryicons_bf639",
+    "LibraryVersion": "2023-01-22T04:25:14Z",
+    "OriginalComponentDefinitionTemplateId": "3d154f125f71464f9751936300c90f75",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-01-22T04:25:16.643+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 0,
+    "LibraryId": "ea3e6953-d564-417b-9fd8-725c62257d10",
+    "LibraryLogicalName": "witco_cmplibrarydocumentation_64949",
+    "LibraryVersion": "2023-02-18T05:15:17Z",
+    "OriginalComponentDefinitionTemplateId": "2081e6ad40c84fa39d06c5ec14e9adb6",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-02-18T16:24:35.979+00:00"
+  }
+]

@@ -1,0 +1,236 @@
+cmpIconsOffice365Products As CanvasComponent:
+    Access: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#b72c3f'/><stop offset='.5' stop-color='#b12334'/><stop offset='1' stop-color='#9d1623'/></linearGradient></defs><path d='M12 30v10c0 2.761 7.387 5 16.5 5S45 42.761 45 40V30z' fill='#881421'/><path d='M12 19v11c0 2.761 7.387 5 16.5 5S45 32.761 45 30V19z' fill='#af2031'/><path d='M12 8v11c0 2.761 7.387 5 16.5 5S45 21.761 45 19V8z' fill='#c94f60'/><path fill='none' d='M0 0h48v48H0z'/><ellipse cx='28.5' cy='8' rx='16.5' ry='5' fill='#e08095'/><path d='M24.167 12H12v25h12.167A1.839 1.839 0 0 0 26 35.167V13.833A1.839 1.839 0 0 0 24.167 12z' opacity='.1'/><path d='M23.167 13H12v25h11.167A1.839 1.839 0 0 0 25 36.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.2'/><path d='M23.167 13H12v23h11.167A1.839 1.839 0 0 0 25 34.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.2'/><path d='M22.167 13H12v23h10.167A1.839 1.839 0 0 0 24 34.167V14.833A1.839 1.839 0 0 0 22.167 13z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M11.683 18.041h2.7l4.338 11.917h-2.55l-.956-2.842h-4.463l-.939 2.842H7.279zm2.958 7.239l-1.387-4.313a5.654 5.654 0 0 1-.254-.973h-.05a5.506 5.506 0 0 1-.249 1l-1.4 4.288z' fill='#fff'/></svg>",Text:"Access"}
+        
+    Delve: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48 48'><defs><clipPath id='clip-path'><path d='M45,24l2.92731-12.54553A2,2,0,0,0,45.97961,9H45V5a2,2,0,0,0-2-2H11A2,2,0,0,0,9,5V43a2,2,0,0,0,2,2H43a2,2,0,0,0,2-2V39h.97961a2,2,0,0,0,1.9477-2.45447Z' fill='none'/></clipPath><linearGradient id='linear-gradient' x1='4.1699' y1='10.43753' x2='19.83048' y2='37.56247' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#c32050'/><stop offset='0.5' stop-color='#bc1948'/><stop offset='1' stop-color='#9c1942'/></linearGradient></defs><g style='isolation:isolate'><g id='Color'><g opacity='0.2' style='mix-blend-mode:multiply'><image width='164' height='189' transform='translate(7.37764 2.97794) scale(0.24)' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKQAAAC9CAYAAAA9bNYSAAAACXBIWXMAAC4jAAAuIwF4pT92AAAGbElEQVR4Xu3ZXU8cRx5G8dMwGEyM1zhR3qy8Sfn+n2mlZL3eLDgOGAMDTOeiquiaZoBlJUvPxflJrZ6B6bk6+lf19DCOI1KKxWMfaIZhGNrLBz8oTUaA8QlTb3jsszXEAdjqjj5KA1XTxzQCq3qM7XgszgeDHIahBbgAduqxALYpIRqj5lp8N/W4Aq7rcQOsHory3iBrjNvAM+A5sA98AexRwjRKzbUYV5QQL4EL4BNwXt9fUaJcbfqCjXvILsY9SoSvgNfAIXDAFKVBqteCvAaWlBBPgA/1OKl/Ww7DwKYo7wQ5i/EA+BL4Fvge+JoS5RcYpO7qg7wEToH3wB/AO8pq+x74CFwOw3BnT7kWZL2B2QJ2gRfAV8Ab4GfgR+A7yqRsQW4hrVtR9ootyCNKM/uUZtpnVsA4DMPanvI2yC7GnXrxISXAn4FfgZ/q+1eUPeUCJ6TW9XvIJXBGWWEPKNMRyh5yWc833TXA+oQcKEv1bv2Cr4EfgF/q8QNlYr6gfHm7qZF6/bL9krKathjbvvKsnpeUKG/Ng1xQpt8rSpBvKEv1m/r+JWVv2aYjGKUmY3deUUJsjS2Z9pTHlJucM8oNztCW7QWs/fi9oCzXLcjvgG+Yxm5bqtve0Rg116Jsv2FDGWSHlBX2NdNga/cht1Oyn5Bt/7hXL3hNCfGQsky3yTh/UiP1+jbaQ5VdytJ9UI/9+rdtpp6mCcn0aLDtIffvudibGP2vWictymeUjnbr6/7hyq3+Z5t2U7Oz4WIno/5fbYi1gbfggZ7mvyO2C9tF/Ug1Rj1Vf+Pb2hpmx5pNQfbHPEaj1FPN25nH+OCS/dAFxqjPzkd/imKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQimKQitIHOXbncfa+P0ufzXxCjrNjxeY4pc9iU5Ar4Aa4rud5lNJTbFpp7x1y8yV7RQlx2R0tTIPUU80j7IfbxiHXguwn4xI4Bz7V8wUlyvZl0lP0MbaV996e5hPymhLgGXBSjzPgEqPU0/QhtlX3oh5L4IoNK++ie90uvABOgQ/A+3r+B7ALbNfPbgFDfd3OUh/Xqh5txf1I6eqUacj19yhADXIcx3EYhn5CngBHwB/Al8AL4Bklvr16nVGqN98v3lCm4CfKUDsC/gscU/o6r/9f9V/ST8j2JZeUio+At5QYdykB3gAH9f2CEqIxqmkxXjPFeEIZbL8D/wL+Qwn0vH5uHMdxfULC7ZRsNzUfKSU/p0zGFuMFcAjsd383SsH6nrEt06eUjv4N/Ab8E3gH/EkXZP8l/YSEqe7zetE2Jbab+re/KEt4m5Lb+PhRk3YnfUkZah8oy/Q7ymr7ljItT5n2kPcHWadkK/wjJcYV0zJ+DLzGZVt39ct1H+QxJcojypA7oSzlV8CqX67h7oRkHMfVMAxQvhTWiz8GXjIt2Qappg9ySYnulLKqntTXnygtXQE38xgBhg1/K/8Yhi3KcrxDmYbPKSHu1fc7uIfUpN9DXjHtI9vDldsQ2TAZm3uDBBjKqNyi7BUX9dip79v+0hjV9D/5tJ99+iczK2Z31XMPBgm3UfZHm5x9iEapPqQ2KdeeXT8UYvNokL0aJxigHjdCqfCxD/aeFKT0ufkboqL8DdJLx2BZ/pnKAAAAAElFTkSuQmCC' style='mix-blend-mode:multiply'/><rect x='9' y='3' width='36' height='42' rx='2' fill='#fff'/></g><g opacity='0.12' style='mix-blend-mode:multiply'><image width='156' height='181' transform='translate(8.31177 2.47207) scale(0.24)' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAAC1CAYAAACqG5azAAAACXBIWXMAAC4jAAAuIwF4pT92AAAECUlEQVR4Xu3YvW9bVRyH8ef4RVYZQlAGhkKVsrXKisrLjPhzmVmyoKitWJHYUEXoEKGopQNSZDuH4Zyb2G4TN6T5Ln0+0tWJ7eNMj37n+pZaK9uUUsbABBhv26uP0hJY1FqX2zaWq4JbiWwK7AD3+2p0WrUE3gAv+zrnmvjeCq6HNgN2aZHtAV8CX/fXE6RLC1psvwLHwOmw1lrnm5vXgiulTGmBPQQeA09ose1xOeFGm/9EH7VzLifcKfACOASeAieb0V1Mqz7Z9oDvgB+BA2CfFtkU7+F0tXu0dubAI+Az2mA6KqWsRbd6PM6Ar2ix/QB83t8zMm0z7tesX9+vfLYW3QQuptsurc4DWmyfIN3clNbPEN058Esp5e9a63KYcDPa8fltX2dI/98Q3TfAK9p93StgOdqYbo/63x6juq3hB+gD4FN6UyPasfoF7RfpPk43fThDX6PVN8b4YFcho5V1rUTpLhiYogxOUQanKINTlMEpyuAUZXCKMjhFGZyiDE5RBqcog1OUwSnK4BRlcIoyOEUZnKIMTlEGpyiDU5TBKcrgFGVwijI4RRmcogxOUQanKINTlMEpyuAUZXCKMjhFGZyiDE5RBqcog1OUwSnK4BRlcIoyOEUZnKIMTlEGpyiDU5TBKcrgFGVwijI4RRmcogxOUQanKINTlMEpyuAUZXCKMjhFGZyiDE5RBqcog1OUwSnK4BRlcIoyOEUZnKIMTlEGpyiDU5TBKcrgFGVwijI4RRmcogxOUQanKINTlMEpyuAUZXCKMjhFGZyiDE5RBqcog1OUwSnK4BRlcIoyOEUZnKIMTlEGpyiDU5TBKcrgFGVwijI4RRmcogxOUQanKINTlMEpyuAUZXCKMjhFGZyiDE5RBqcog1OUwSnK4BRlcIoyOEUZnKIMTlEGpyiDU5TBKcrgFGVwijI4RRmcogxOUQanKINTlMEpyuAUZXCKMjhFGZyiDE5RBqcog1OUwSnK4BRlcIoyOEUZnKIMTlEGpyiDU5TBKcrgFGVwijI4RRmcogxOUQanKINTlMEpyuAUZXCKMjhFGZyiDE5RBqcog1OUwSnK4BQ1BHcOLPoq3ZkRsATeAC/7urz2G9ItjGiT7S/gOfACOLvuC9INvHVyjmqtS+A18Hu/XuOU0+3NgVPgT+AfelPDPdwZbbo9xSmn25sDJ8Az4BA4pk26FtzGlPutb/4XJ51ubojtCPiJNsROe2NMVjaeAX8AP/fXB8A+sIOPT/R+zmnH6DNabEfASa11PmwotdaL3aWUKbAHPAQeA0+A+6yHKV1lQbtnO6RNtrXYYCM4gFLKGJgBu7TYdoAx0nbDI7Zj2jG6Fhu8I7iLD1p4E4xNN7MEFsM926Yrg5Puwn8sVrhudLLiSAAAAABJRU5ErkJggg==' style='mix-blend-mode:multiply'/><rect x='9' y='3' width='36' height='42' rx='2' fill='#fff'/></g><rect width='48' height='48' transform='translate(48 48) rotate(-180)' fill='none'/><path d='M9,24H45a0,0,0,0,1,0,0V43a2,2,0,0,1-2,2H11a2,2,0,0,1-2-2V24A0,0,0,0,1,9,24Z' fill='#8c193f'/><path d='M11,3H43a2,2,0,0,1,2,2V24a0,0,0,0,1,0,0H9a0,0,0,0,1,0,0V5A2,2,0,0,1,11,3Z' fill='#d23062'/><path d='M45.97961,39H9V24H45l2.92729,12.54554A2,2,0,0,1,45.97961,39Z' fill='#e8467c'/><path d='M45.97961,9H9V24H45l2.92729-12.54554A2,2,0,0,0,45.97961,9Z' fill='#bc1948'/><rect width='48' height='48' fill='none'/><g clip-path='url(#clip-path)'><g id='Ambient'><g opacity='0.48' style='mix-blend-mode:multiply'><image width='139' height='139' transform='translate(-4.50231 9.33799) scale(0.24)' xlink:href='data:image/png;base64,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' style='mix-blend-mode:multiply'/><rect x='0.00019' y='12' width='24' height='24' rx='2' fill='#fff'/></g><g opacity='0.24' style='mix-blend-mode:multiply'><image width='106' height='106' transform='translate(-0.56485 11.59545) scale(0.24)' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAAC4jAAAuIwF4pT92AAADAUlEQVR4Xu3WP0tbURjH8e9JbgjtIAEphdpBu6ndrXTuG+gb7VwcS7Hu1W41gw4iQnAQQv6cDs/JX6NLE5Mf/D7LTXJulvvlOfeknDOLpJTqQAXUF95gyzIA+jnnwXM3pflQJVATaAE7wBaOtSoD4B64BjpA96lgM6FSSg1gG9gDDoAjIla16M/23/pEpDPgArgE7nLOvfkbx6FKpLfAMfAFOAR2iYmqzf/RlmJITFQbOAdOgFPgZj5WBePtbpuI9LVc3xBboLe91XrF7GumBvxMKc3EGm1pTeADMUnHwDuggb2EOvCaeOafy29D4EdK6Xb0zqrKNLWAfWK7e4MjrcPo1fOJyQHjHniAGLMKeE8cHHaJ6bL1aBCDckgMTqsMEjVi9LbwUXxTNImBOSIGqILJaW40WT7drd/CwXGYzfRocBxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoUQ4lAiHEuFQIhxKhEOJcCgRDiXCoTbTEOiXKzAJ9WjB1mYA3APX5TqACLVwwdamC7SBM+CKGCBq5cNVWWiXG209esAtcA78ATo555io8qFTFn4DN8ADnqyX1iOe/S/gBPjL1NBU5dotC9/L94/ALtACmkAdW5UB8fxviUjfgFPgbjRNACnnHB9SagDbwB5wABwD+0SwLXxCXIUhcS5oE9vdCRHpJufcm75xHAogpVQnJqhFBNoHjoAdJtNny9MnDnFnwAVwSUzSTCSYCzX+cTbYDjFR3v6Wb/rE3QG609vdtIWhxosRrMKRVmkA9J8KNPJsKNsc/wCRAbW1GZ4XggAAAABJRU5ErkJggg==' style='mix-blend-mode:multiply'/><rect x='0.00019' y='12' width='24' height='24' rx='2' fill='#fff'/></g></g></g><rect x='0.00019' y='12' width='24' height='24' rx='2' fill='url(#linear-gradient)'/><path d='M7.00019,17.5h4.17922a7.61978,7.61978,0,0,1,5.27615,1.6182,6.04342,6.04342,0,0,1,1.78592,4.71862,6.81228,6.81228,0,0,1-.88389,3.4993A5.96874,5.96874,0,0,1,14.86,29.675a8.13731,8.13731,0,0,1-3.75314.825H7.00019ZM11.125,28.40586a4.9505,4.9505,0,0,0,2.37971-.5394,3.63433,3.63433,0,0,0,1.53208-1.55928,5.1927,5.1927,0,0,0,.53033-2.425A4.22078,4.22078,0,0,0,14.434,20.71827a4.49647,4.49647,0,0,0-3.27267-1.106H9.53855v8.79359Z' fill='#fff'/></g></g></svg>",Text:"Delve"}
+        
+    Excel: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#18884f'/><stop offset='.5' stop-color='#117e43'/><stop offset='1' stop-color='#0b6631'/></linearGradient></defs><path d='M29 23l-17-3v22.167A1.833 1.833 0 0 0 13.833 44h29.334A1.833 1.833 0 0 0 45 42.167V34z' fill='#185c37'/><path d='M29 4H13.833A1.833 1.833 0 0 0 12 5.833V14l17 10 9 3 7-3V14z' fill='#21a366'/><path fill='#107c41' d='M12 14h17v10H12z'/><path fill='none' d='M0 0h48v48H0z'/><path d='M24.167 12H12v25h12.167A1.839 1.839 0 0 0 26 35.167V13.833A1.839 1.839 0 0 0 24.167 12z' opacity='.1'/><path d='M23.167 13H12v25h11.167A1.839 1.839 0 0 0 25 36.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.2'/><path d='M23.167 13H12v23h11.167A1.839 1.839 0 0 0 25 34.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.2'/><path d='M22.167 13H12v23h10.167A1.839 1.839 0 0 0 24 34.167V14.833A1.839 1.839 0 0 0 22.167 13z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M7.677 29.958l3.856-5.975L8 18.041h2.842l1.928 3.8c.178.361.3.629.366.806h.025q.19-.432.4-.839l2.061-3.765h2.609l-3.623 5.907 3.715 6.008h-2.776l-2.227-4.171a3.5 3.5 0 0 1-.266-.557h-.033a2.638 2.638 0 0 1-.258.54l-2.293 4.188z' fill='#fff'/><path d='M43.167 4H29v10h16V5.833A1.833 1.833 0 0 0 43.167 4z' fill='#33c481'/><path fill='#107c41' d='M29 24h16v10H29z'/></svg>",Text:"Excel"}
+        
+        
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =64
+    Icon: =cmpIconsOffice365Products.Access
+    IconFontSize: =18
+    Image: |+
+        ="data:image/svg+xml,"&EncodeUrl(cmpIconsOffice365Products.Icon.Image)
+        
+    MicrosoftForms: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#058f92'/><stop offset='0.5' stop-color='#038489'/><stop offset='1' stop-color='#026d71'/></linearGradient></defs><title>Forms_48x</title><path d='M45,24V42.169A1.831,1.831,0,0,1,43.169,44H13.831A1.831,1.831,0,0,1,12,42.169V24l17-2Z' fill='#036c70'/><path d='M13.831,4H43.169A1.831,1.831,0,0,1,45,5.831V24a0,0,0,0,1,0,0H12a0,0,0,0,1,0,0V5.831A1.831,1.831,0,0,1,13.831,4Z' fill='#37c6d0'/><rect x='30' y='29' width='10' height='10' fill='#1a9ba1'/><circle cx='35' cy='14' r='6' fill='#1a9ba1'/><circle cx='35' cy='14' r='3' fill='#036c70'/><path d='M24.167,12H12V37H24.167A1.839,1.839,0,0,0,26,35.167V13.833A1.839,1.839,0,0,0,24.167,12Z' opacity='0.1'/><path d='M23.167,13H12V38H23.167A1.839,1.839,0,0,0,25,36.167V14.833A1.839,1.839,0,0,0,23.167,13Z' opacity='0.2'/><path d='M23.167,13H12V36H23.167A1.839,1.839,0,0,0,25,34.167V14.833A1.839,1.839,0,0,0,23.167,13Z' opacity='0.2'/><path d='M22.167,13H12V36H22.167A1.839,1.839,0,0,0,24,34.167V14.833A1.839,1.839,0,0,0,22.167,13Z' opacity='0.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><rect width='48' height='48' fill='none'/><path d='M16.713,19.98h-5.16v3.249h4.811v1.928H11.553v4.8H9.218V18.043h7.5Z' fill='#fff'/></svg>",Text:"Microsoft Forms"}
+        
+    MicrosoftTeams: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#5a62c3'/><stop offset='.5' stop-color='#4d55bd'/><stop offset='1' stop-color='#3940ab'/></linearGradient></defs><path d='M31.993 19H43.1a1.9 1.9 0 0 1 1.9 1.9v10.117A6.983 6.983 0 0 1 38.017 38h-.033A6.983 6.983 0 0 1 31 31.017V19.993a.993.993 0 0 1 .993-.993z' fill='#5059c9'/><circle cx='39.5' cy='12.5' r='4.5' fill='#5059c9'/><circle cx='25.5' cy='10.5' r='6.5' fill='#7b83eb'/><path d='M34.167 19H15.833A1.88 1.88 0 0 0 14 20.923v11.539A11.279 11.279 0 0 0 25 44a11.279 11.279 0 0 0 11-11.538V20.923A1.88 1.88 0 0 0 34.167 19z' fill='#7b83eb'/><path fill='none' d='M0 0h48v48H0z'/><path d='M26 19v16.17a1.841 1.841 0 0 1-1.14 1.69 1.772 1.772 0 0 1-.69.14h-9.29c-.13-.33-.25-.66-.35-1a12.179 12.179 0 0 1-.53-3.54V20.92A1.877 1.877 0 0 1 15.83 19z' opacity='.1'/><path d='M25 19v17.17a1.772 1.772 0 0 1-.14.69A1.841 1.841 0 0 1 23.17 38h-7.82c-.17-.33-.33-.66-.47-1s-.25-.66-.35-1a12.179 12.179 0 0 1-.53-3.54V20.92A1.877 1.877 0 0 1 15.83 19z' opacity='.2'/><path d='M25 19v15.17A1.844 1.844 0 0 1 23.17 36h-8.64a12.179 12.179 0 0 1-.53-3.54V20.92A1.877 1.877 0 0 1 15.83 19z' opacity='.2'/><path d='M24 19v15.17A1.844 1.844 0 0 1 22.17 36h-7.64a12.179 12.179 0 0 1-.53-3.54V20.92A1.877 1.877 0 0 1 15.83 19z' opacity='.2'/><path d='M26 13.83v3.15c-.17.01-.33.02-.5.02s-.33-.01-.5-.02a5.489 5.489 0 0 1-1-.16A6.5 6.5 0 0 1 19.5 13a5.556 5.556 0 0 1-.32-1h4.99A1.837 1.837 0 0 1 26 13.83z' opacity='.1'/><path d='M25 14.83v2.15a5.489 5.489 0 0 1-1-.16A6.5 6.5 0 0 1 19.5 13h3.67A1.837 1.837 0 0 1 25 14.83z' opacity='.2'/><path d='M25 14.83v2.15a5.489 5.489 0 0 1-1-.16A6.5 6.5 0 0 1 19.5 13h3.67A1.837 1.837 0 0 1 25 14.83z' opacity='.2'/><path d='M24 14.83v1.99A6.5 6.5 0 0 1 19.5 13h2.67A1.837 1.837 0 0 1 24 14.83z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M17.824 19.978h-3.665v9.98h-2.335v-9.98H8.176v-1.936h9.648z' fill='#fff'/></svg>",Text:"Microsoft Teams"}
+        
+    Office365: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'>
+        <path d='M20.0842 3.02539L19.8595 3.1613C19.5021 3.3775 19.1654 3.61923 18.8512 3.88336L19.4993 3.42749H25L26 10.9995L21 15.9995L16 19.4749V23.4824C16 26.2814 17.4629 28.8769 19.8574 30.3263L25.1211 33.5124L14 39.9997H11.8551L7.85737 37.5799C5.46286 36.1305 4 33.535 4 30.736V17.2601C4 14.4602 5.46379 11.864 7.85952 10.4149L19.8595 3.15638C19.9339 3.11141 20.0088 3.06774 20.0842 3.02539Z' fill='url(#paint0_radial_48543_184825)'/>
+        <path d='M20.0842 3.02539L19.8595 3.1613C19.5021 3.3775 19.1654 3.61923 18.8512 3.88336L19.4993 3.42749H25L26 10.9995L21 15.9995L16 19.4749V23.4824C16 26.2814 17.4629 28.8769 19.8574 30.3263L25.1211 33.5124L14 39.9997H11.8551L7.85737 37.5799C5.46286 36.1305 4 33.535 4 30.736V17.2601C4 14.4602 5.46379 11.864 7.85952 10.4149L19.8595 3.15638C19.9339 3.11141 20.0088 3.06774 20.0842 3.02539Z' fill='url(#paint1_linear_48543_184825)'/>
+        <path d='M31.9973 19V23.4803C31.9973 26.2793 30.5344 28.8748 28.1399 30.3242L16.1399 37.5878C13.6852 39.0737 10.6308 39.1273 8.13281 37.7487L19.8546 44.844C22.4013 46.3855 25.5932 46.3855 28.1399 44.844L40.1399 37.5803C42.5344 36.1309 43.9972 33.5354 43.9972 30.7364V27.5L42.9973 26L31.9973 19Z' fill='url(#paint2_radial_48543_184825)'/>
+        <path d='M31.9973 19V23.4803C31.9973 26.2793 30.5344 28.8748 28.1399 30.3242L16.1399 37.5878C13.6852 39.0737 10.6308 39.1273 8.13281 37.7487L19.8546 44.844C22.4013 46.3855 25.5932 46.3855 28.1399 44.844L40.1399 37.5803C42.5344 36.1309 43.9972 33.5354 43.9972 30.7364V27.5L42.9973 26L31.9973 19Z' fill='url(#paint3_linear_48543_184825)'/>
+        <path d='M40.1405 10.4153L28.1405 3.15678C25.6738 1.66471 22.6021 1.61849 20.0979 3.01811L19.8595 3.16231C17.4638 4.61143 16 7.20757 16 10.0075V19.4914L19.8595 17.1568C22.4051 15.6171 25.5949 15.6171 28.1405 17.1568L40.1405 24.4153C42.4613 25.8192 43.9076 28.2994 43.9957 30.9985C43.9986 30.9113 44 30.824 44 30.7364V17.2605C44 14.4606 42.5362 11.8644 40.1405 10.4153Z' fill='url(#paint4_radial_48543_184825)'/>
+        <path d='M40.1405 10.4153L28.1405 3.15678C25.6738 1.66471 22.6021 1.61849 20.0979 3.01811L19.8595 3.16231C17.4638 4.61143 16 7.20757 16 10.0075V19.4914L19.8595 17.1568C22.4051 15.6171 25.5949 15.6171 28.1405 17.1568L40.1405 24.4153C42.4613 25.8192 43.9076 28.2994 43.9957 30.9985C43.9986 30.9113 44 30.824 44 30.7364V17.2605C44 14.4606 42.5362 11.8644 40.1405 10.4153Z' fill='url(#paint5_linear_48543_184825)'/>
+        <path d='M4.00428 30.9984C4.00428 30.9984 4.00428 30.9984 4.00428 30.9984Z' fill='url(#paint6_radial_48543_184825)'/>
+        <path d='M4.00428 30.9984C4.00428 30.9984 4.00428 30.9984 4.00428 30.9984Z' fill='url(#paint7_linear_48543_184825)'/>
+        <defs>
+        <radialGradient id='paint0_radial_48543_184825' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(17.4186 10.6379) rotate(110.528) scale(33.3657 58.1966)'>
+        <stop offset='0.06441' stop-color='#AE7FE2'/>
+        <stop offset='1' stop-color='#0078D4'/>
+        </radialGradient>
+        <linearGradient id='paint1_linear_48543_184825' x1='17.5119' y1='37.868' x2='12.7513' y2='29.6342' gradientUnits='userSpaceOnUse'>
+        <stop stop-color='#114A8B'/>
+        <stop offset='1' stop-color='#0078D4' stop-opacity='0'/>
+        </linearGradient>
+        <radialGradient id='paint2_radial_48543_184825' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(10.4272 36.3511) rotate(-8.36717) scale(31.0503 20.5108)'>
+        <stop offset='0.133928' stop-color='#D59DFF'/>
+        <stop offset='1' stop-color='#5E438F'/>
+        </radialGradient>
+        <linearGradient id='paint3_linear_48543_184825' x1='40.3539' y1='25.3768' x2='35.2525' y2='32.6916' gradientUnits='userSpaceOnUse'>
+        <stop stop-color='#493474'/>
+        <stop offset='1' stop-color='#8C66BA' stop-opacity='0'/>
+        </linearGradient>
+        <radialGradient id='paint4_radial_48543_184825' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(41.0552 26.504) rotate(-165.772) scale(24.9228 41.9552)'>
+        <stop offset='0.0584996' stop-color='#50E6FF'/>
+        <stop offset='1' stop-color='#436DCD'/>
+        </radialGradient>
+        <linearGradient id='paint5_linear_48543_184825' x1='16.9758' y1='3.05655' x2='24.4868' y2='3.05655' gradientUnits='userSpaceOnUse'>
+        <stop stop-color='#2D3F80'/>
+        <stop offset='1' stop-color='#436DCD' stop-opacity='0'/>
+        </linearGradient>
+        <radialGradient id='paint6_radial_48543_184825' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(41.0552 26.504) rotate(-165.772) scale(24.9228 41.9552)'>
+        <stop offset='0.0584996' stop-color='#50E6FF'/>
+        <stop offset='1' stop-color='#436DCD'/>
+        </radialGradient>
+        <linearGradient id='paint7_linear_48543_184825' x1='16.9758' y1='3.05655' x2='24.4868' y2='3.05655' gradientUnits='userSpaceOnUse'>
+        <stop stop-color='#2D3F80'/>
+        <stop offset='1' stop-color='#436DCD' stop-opacity='0'/>
+        </linearGradient>
+        </defs>
+        </svg>",Text:"Office 365"}
+        
+    OneDrive: |-
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path d='M28 27s8.854-6.054 9.045-6.041A13.126 13.126 0 0 0 13.366 17h.134z' fill='#0364b8'/><path d='M19.016 18.564A10.447 10.447 0 0 0 13.5 17h-.134a10.5 10.5 0 0 0-8.479 16.5L19 32l8.833-8.155z' fill='#0f78d4'/><path d='M37.045 20.959a8.455 8.455 0 0 0-.576-.021 8.506 8.506 0 0 0-3.382.7l-5.254 2.21L34 31l9.98 2.517a8.532 8.532 0 0 0-6.935-12.558z' fill='#1490df'/><path d='M36.529 29.054l-2.178-1.3-4.994-2.991-1.524-.913-4.019 1.692-7.7 3.238-3.452 1.45-7.775 3.27A10.484 10.484 0 0 0 13.5 38h22.969a8.531 8.531 0 0 0 7.511-4.483z' fill='#28a8ea'/><path fill='none' d='M0 0h48v48H0z'/></svg>",Text:"OneDrive"}
+    OneNote: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#8324b3'/><stop offset='.5' stop-color='#7a1bac'/><stop offset='1' stop-color='#621197'/></linearGradient></defs><path d='M35 44H13.831A1.831 1.831 0 0 1 12 42.169V5.831A1.831 1.831 0 0 1 13.831 4h29.338A1.831 1.831 0 0 1 45 5.831V14z' fill='#ca64ea'/><path fill='#ae4bd5' d='M45 24l-5 3-5-3V14h10v10z'/><path fill='#9332bf' d='M45 34l-5 3-5-3V24h10v10z'/><path d='M35 34h10v8.125A1.875 1.875 0 0 1 43.125 44H35V34z' fill='#7719aa'/><path fill='none' d='M0 0h48v48H0z'/><path d='M24.167 12H12v25h12.167A1.839 1.839 0 0 0 26 35.167V13.833A1.839 1.839 0 0 0 24.167 12z' opacity='.2'/><path d='M23.167 13H12v25h11.167A1.839 1.839 0 0 0 25 36.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.2'/><path d='M23.167 13H12v23h11.167A1.839 1.839 0 0 0 25 34.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.5'/><path d='M22.167 13H12v23h10.167A1.839 1.839 0 0 0 24 34.167V14.833A1.839 1.839 0 0 0 22.167 13z' opacity='.5'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M8.026 18.042h2.485l4.883 7.9q.333.531.5.855h.032a12.032 12.032 0 0 1-.072-1.62v-7.135h2.12v11.916h-2.326l-5.066-8.119A6.313 6.313 0 0 1 10.13 21h-.04a17.54 17.54 0 0 1 .063 1.778v7.18H8.026z' fill='#fff'/></svg>",Text:"OneNote"}
+        
+        
+    Outlook: |-
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='28.5' y1='25' x2='28.5' y2='44' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#35b8f1'/><stop offset='1' stop-color='#28a8ea'/></linearGradient><linearGradient id='b' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#1784d9'/><stop offset='.5' stop-color='#107ad5'/><stop offset='1' stop-color='#0a63c9'/></linearGradient></defs><path d='M45 25a.96.96 0 0 0-.458-.825h-.005l-.018-.01-14.9-8.82a2.026 2.026 0 0 0-.2-.119 2 2 0 0 0-1.834 0 2.026 2.026 0 0 0-.2.119l-14.9 8.82-.018.01a.971.971 0 0 0 .023 1.663l14.9 8.82a2.241 2.241 0 0 0 .2.119 2 2 0 0 0 1.834 0 2.241 2.241 0 0 0 .2-.119l14.9-8.82A.959.959 0 0 0 45 25z' fill='#0a2767'/><path fill='#0364b8' d='M14.222 19.111H24v8.963h-9.778zM43 10V5.9A1.858 1.858 0 0 0 41.187 4H15.813A1.858 1.858 0 0 0 14 5.9V10l15 4z'/><path fill='#0078d4' d='M14 10h10v9H14z'/><path fill='#28a8ea' d='M34 10H24v9l10 9h9v-9l-9-9z'/><path fill='#0078d4' d='M24 19h10v9H24z'/><path fill='#0364b8' d='M24 28h10v9H24z'/><path fill='#14447d' d='M14.222 28.074H24v8.148h-9.778z'/><path fill='#0078d4' d='M34 28h9v9h-9z'/><path d='M44.542 25.783l-.019.01-14.9 8.38c-.065.04-.131.078-.2.112a2.077 2.077 0 0 1-.808.2l-.814-.476a2.033 2.033 0 0 1-.2-.115l-15.1-8.618h-.007L12 25v16.964A2.05 2.05 0 0 0 14.063 44h28.906c.017 0 .032-.008.05-.008a2.531 2.531 0 0 0 .7-.146A2.019 2.019 0 0 0 44 43.7c.067-.038.182-.121.182-.121A2.019 2.019 0 0 0 45 41.964V25a.9.9 0 0 1-.458.783z' fill='url(#a)'/><path d='M44.2 24.933v1.04L28.62 36.7 12.49 25.283a.01.01 0 0 0-.01-.01l-1.48-.89v-.75l.61-.01 1.29.74.03.01.11.07s15.16 8.65 15.2 8.67l.58.34c.05-.02.1-.04.16-.06.03-.02 15.05-8.47 15.05-8.47z' fill='#0a2767' opacity='.5'/><path fill='none' d='M0 0h48v48H0z'/><path d='M44.542 25.783l-.019.011-14.9 8.38c-.065.04-.131.078-.2.112a2.089 2.089 0 0 1-1.834 0 2.264 2.264 0 0 1-.2-.112l-14.9-8.38-.018-.011A.9.9 0 0 1 12 25v16.964A2.049 2.049 0 0 0 14.062 44h28.876A2.049 2.049 0 0 0 45 41.964V25a.9.9 0 0 1-.458.783z' fill='#1490df'/><path d='M29.84 34.05l-.223.125a2.183 2.183 0 0 1-.2.113 2.071 2.071 0 0 1-.786.208L34.3 41.2l9.889 2.383a2.038 2.038 0 0 0 .627-.783z' opacity='.1'/><path d='M30.85 33.482l-1.233.693a2.183 2.183 0 0 1-.2.113 2.071 2.071 0 0 1-.786.208l2.656 7.323 12.905 1.761A2.022 2.022 0 0 0 45 41.964v-.219z' opacity='.05'/><path d='M14.09 44h28.845a2.074 2.074 0 0 0 1.235-.4L27.8 34.011a2.033 2.033 0 0 1-.2-.115l-15.1-8.618h-.007L12 25v16.906A2.092 2.092 0 0 0 14.09 44z' fill='#28a8ea'/><path d='M26 13.833v21.33a1.838 1.838 0 0 1-1.15 1.7 1.723 1.723 0 0 1-.68.14H12V13h2v-1h10.17A1.837 1.837 0 0 1 26 13.833z' opacity='.1'/><path d='M25 14.833v21.33a1.629 1.629 0 0 1-.15.7A1.822 1.822 0 0 1 23.17 38H12V13h11.17a1.679 1.679 0 0 1 .83.21 1.818 1.818 0 0 1 1 1.623z' opacity='.2'/><path d='M25 14.833v19.33A1.846 1.846 0 0 1 23.17 36H12V13h11.17a1.679 1.679 0 0 1 .83.21 1.818 1.818 0 0 1 1 1.623z' opacity='.2'/><path d='M24 14.833v19.33A1.839 1.839 0 0 1 22.17 36H12V13h10.17A1.831 1.831 0 0 1 24 14.833z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#b)'/><path d='M7.729 20.688a5.332 5.332 0 0 1 2.094-2.313 6.33 6.33 0 0 1 3.327-.834 5.892 5.892 0 0 1 3.079.791 5.284 5.284 0 0 1 2.037 2.21 7.133 7.133 0 0 1 .714 3.25 7.528 7.528 0 0 1-.735 3.4 5.41 5.41 0 0 1-2.1 2.287 6.126 6.126 0 0 1-3.194.812 6.02 6.02 0 0 1-3.147-.8 5.366 5.366 0 0 1-2.064-2.214 6.963 6.963 0 0 1-.722-3.211 7.733 7.733 0 0 1 .711-3.378zm2.232 5.43a3.461 3.461 0 0 0 1.178 1.522 3.077 3.077 0 0 0 1.84.554 3.223 3.223 0 0 0 1.964-.572 3.315 3.315 0 0 0 1.144-1.522 5.908 5.908 0 0 0 .365-2.123 6.463 6.463 0 0 0-.344-2.15A3.4 3.4 0 0 0 15 20.241a3.043 3.043 0 0 0-1.947-.6 3.175 3.175 0 0 0-1.883.559 3.49 3.49 0 0 0-1.2 1.535 6.1 6.1 0 0 0-.008 4.385z' fill='#fff'/><path fill='#50d9ff' d='M34 10h9v9h-9z'/></svg>",Text:"Outlook"}
+    PaddingBottom: =16
+    PaddingLeft: =16
+    PaddingRight: =8
+    PaddingTop: =16
+    PowerPoint: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#ca4c28'/><stop offset='.5' stop-color='#c5401e'/><stop offset='1' stop-color='#b62f14'/></linearGradient></defs><path d='M28 26L25 4h-.224A19.834 19.834 0 0 0 5 23.776V24z' fill='#ed6c47'/><path d='M25.224 4H25v20l10 4 10-4v-.224A19.834 19.834 0 0 0 25.224 4z' fill='#ff8f6b'/><path d='M45 24v.22A19.837 19.837 0 0 1 25.22 44h-.44A19.837 19.837 0 0 1 5 24.22V24z' fill='#d35230'/><path fill='none' d='M0 0h48v48H0z'/><path d='M26 13.83v21.34a1.841 1.841 0 0 1-1.14 1.69 1.772 1.772 0 0 1-.69.14H9.72c-.28-.32-.55-.66-.8-1A19.614 19.614 0 0 1 5 24.22v-.44A19.555 19.555 0 0 1 8.22 13c.22-.34.45-.68.7-1h15.25A1.844 1.844 0 0 1 26 13.83z' opacity='.1'/><path d='M25 14.83v21.34a1.772 1.772 0 0 1-.14.69A1.841 1.841 0 0 1 23.17 38H10.63a17.1 17.1 0 0 1-.91-1c-.28-.32-.55-.66-.8-1A19.614 19.614 0 0 1 5 24.22v-.44A19.555 19.555 0 0 1 8.22 13h14.95A1.844 1.844 0 0 1 25 14.83z' opacity='.2'/><path d='M25 14.83v19.34A1.844 1.844 0 0 1 23.17 36H8.92A19.614 19.614 0 0 1 5 24.22v-.44A19.555 19.555 0 0 1 8.22 13h14.95A1.844 1.844 0 0 1 25 14.83z' opacity='.2'/><path d='M24 14.83v19.34A1.844 1.844 0 0 1 22.17 36H8.92A19.614 19.614 0 0 1 5 24.22v-.44A19.555 19.555 0 0 1 8.22 13h13.95A1.844 1.844 0 0 1 24 14.83z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M13.2 17.889a5.039 5.039 0 0 1 3.338.978A3.5 3.5 0 0 1 17.7 21.7a3.942 3.942 0 0 1-.573 2.117 3.829 3.829 0 0 1-1.627 1.438 5.524 5.524 0 0 1-2.447.514h-2.319v4.31H8.359v-12.19zm-2.468 6.018h2.044a2.654 2.654 0 0 0 1.807-.539 2 2 0 0 0 .611-1.577q0-2.015-2.342-2.015h-2.12z' fill='#fff'/></svg>",Text:"PowerPoint"}
+        
+        
+    Project: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#058f92'/><stop offset='0.5' stop-color='#038489'/><stop offset='1' stop-color='#026d71'/></linearGradient></defs><title>Forms_48x</title><path d='M45,24V42.169A1.831,1.831,0,0,1,43.169,44H13.831A1.831,1.831,0,0,1,12,42.169V24l17-2Z' fill='#036c70'/><path d='M13.831,4H43.169A1.831,1.831,0,0,1,45,5.831V24a0,0,0,0,1,0,0H12a0,0,0,0,1,0,0V5.831A1.831,1.831,0,0,1,13.831,4Z' fill='#37c6d0'/><rect x='30' y='29' width='10' height='10' fill='#1a9ba1'/><circle cx='35' cy='14' r='6' fill='#1a9ba1'/><circle cx='35' cy='14' r='3' fill='#036c70'/><path d='M24.167,12H12V37H24.167A1.839,1.839,0,0,0,26,35.167V13.833A1.839,1.839,0,0,0,24.167,12Z' opacity='0.1'/><path d='M23.167,13H12V38H23.167A1.839,1.839,0,0,0,25,36.167V14.833A1.839,1.839,0,0,0,23.167,13Z' opacity='0.2'/><path d='M23.167,13H12V36H23.167A1.839,1.839,0,0,0,25,34.167V14.833A1.839,1.839,0,0,0,23.167,13Z' opacity='0.2'/><path d='M22.167,13H12V36H22.167A1.839,1.839,0,0,0,24,34.167V14.833A1.839,1.839,0,0,0,22.167,13Z' opacity='0.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><rect width='48' height='48' fill='none'/><path d='M16.713,19.98h-5.16v3.249h4.811v1.928H11.553v4.8H9.218V18.043h7.5Z' fill='#fff'/></svg>",Text:"Project"}
+        
+    SharePoint: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#058f92'/><stop offset='.5' stop-color='#038489'/><stop offset='1' stop-color='#026d71'/></linearGradient></defs><circle cx='24' cy='15' r='12' fill='#036c70'/><circle cx='34' cy='26' r='11' fill='#1a9ba1'/><circle cx='25.5' cy='36.5' r='8.5' fill='#37c6d0'/><path fill='none' d='M0 0h48v48H0z'/><path d='M26 13.83v21.34a1.841 1.841 0 0 1-1.14 1.69 1.772 1.772 0 0 1-.69.14h-7.16c-.01-.17-.01-.33-.01-.5a4.18 4.18 0 0 1 .02-.5 8.473 8.473 0 0 1 5.09-7.29v-1.86A11.986 11.986 0 0 1 12.17 13a8.455 8.455 0 0 1 .21-1h11.79A1.837 1.837 0 0 1 26 13.83z' opacity='.1'/><path d='M23.17 13h-11a11.987 11.987 0 0 0 10.4 13.915c-3.1 1.47-5.359 5.645-5.551 9.085a4.18 4.18 0 0 0-.02.5c0 .17 0 .33.01.5a6.673 6.673 0 0 0 .13 1h6.03a1.841 1.841 0 0 0 1.69-1.14 1.772 1.772 0 0 0 .14-.69V14.83A1.837 1.837 0 0 0 23.17 13z' opacity='.2'/><path d='M23.17 13h-11a11.988 11.988 0 0 0 10.208 13.891c-3 1.576-5.17 5.741-5.358 9.109h6.15A1.844 1.844 0 0 0 25 34.17V14.83A1.837 1.837 0 0 0 23.17 13z' opacity='.2'/><path d='M22.17 13h-10a11.988 11.988 0 0 0 8.87 13.632A16.522 16.522 0 0 0 17.02 36h5.15A1.837 1.837 0 0 0 24 34.17V14.83A1.831 1.831 0 0 0 22.17 13z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M10.187 23.776a3.384 3.384 0 0 1-1.049-1.109 3.018 3.018 0 0 1-.365-1.517 2.919 2.919 0 0 1 .679-1.965 4.011 4.011 0 0 1 1.806-1.178 7.629 7.629 0 0 1 2.467-.382 9.392 9.392 0 0 1 3.25.455v2.3a5.073 5.073 0 0 0-1.47-.6 7.159 7.159 0 0 0-1.719-.206 3.719 3.719 0 0 0-1.767.374 1.159 1.159 0 0 0-.7 1.062 1.076 1.076 0 0 0 .3.752 2.69 2.69 0 0 0 .8.572q.5.249 1.5.662a1.519 1.519 0 0 1 .214.086 12.341 12.341 0 0 1 1.892.933 3.387 3.387 0 0 1 1.118 1.126 3.264 3.264 0 0 1 .4 1.7 3.162 3.162 0 0 1-.636 2.046 3.557 3.557 0 0 1-1.7 1.144 7.71 7.71 0 0 1-2.424.352 12.824 12.824 0 0 1-2.2-.18 7.534 7.534 0 0 1-1.783-.524v-2.425a5.746 5.746 0 0 0 1.8.86 7.042 7.042 0 0 0 1.986.318 3.42 3.42 0 0 0 1.8-.382A1.208 1.208 0 0 0 15 26.971a1.15 1.15 0 0 0-.34-.826 3.425 3.425 0 0 0-.937-.653q-.6-.3-1.767-.791a10.044 10.044 0 0 1-1.769-.925z' fill='#fff'/></svg>",Text:"SharePoint"}
+        
+    Sway: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#058f92'/><stop offset='0.5' stop-color='#038489'/><stop offset='1' stop-color='#026d71'/></linearGradient></defs><title>Sway_48x</title><path d='M45,5.83V34L29,36l-.4-.05L12,34V5.83A1.831,1.831,0,0,1,13.83,4H43.17A1.831,1.831,0,0,1,45,5.83Z' fill='#37c6d0'/><path d='M45,23.54v5.01l-1.26,1.83H25.17L36,19.55l.87-.87a2.294,2.294,0,0,1,3.26,0Z' fill='#1a9ba1'/><path d='M45,28.55V34L28.6,35.95,12,34V32.54L28.87,15.67a2.318,2.318,0,0,1,3.26,0L36,19.55Z' fill='#038387'/><circle cx='38.5' cy='10.5' r='2.5' fill='#86f2f2'/><path d='M13.833,44H43.167A1.833,1.833,0,0,0,45,42.167V34H12v8.167A1.833,1.833,0,0,0,13.833,44Z' fill='#036c70'/><rect width='48' height='48' fill='none'/><path d='M24.167,12H12V37H24.167A1.839,1.839,0,0,0,26,35.167V13.833A1.839,1.839,0,0,0,24.167,12Z' opacity='0.1'/><path d='M23.167,13H12V38H23.167A1.839,1.839,0,0,0,25,36.167V14.833A1.839,1.839,0,0,0,23.167,13Z' opacity='0.2'/><path d='M23.167,13H12V36H23.167A1.839,1.839,0,0,0,25,34.167V14.833A1.839,1.839,0,0,0,23.167,13Z' opacity='0.2'/><path d='M22.167,13H12V36H22.167A1.839,1.839,0,0,0,24,34.167V14.833A1.839,1.839,0,0,0,22.167,13Z' opacity='0.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M10.029,23.776A3.384,3.384,0,0,1,8.98,22.667a3.018,3.018,0,0,1-.365-1.517,2.919,2.919,0,0,1,.679-1.965A4.011,4.011,0,0,1,11.1,18.007a7.629,7.629,0,0,1,2.467-.382,9.4,9.4,0,0,1,3.251.455v2.3a5.091,5.091,0,0,0-1.471-.6,7.159,7.159,0,0,0-1.719-.206,3.719,3.719,0,0,0-1.767.374A1.161,1.161,0,0,0,11.16,21a1.076,1.076,0,0,0,.3.752,2.708,2.708,0,0,0,.8.572q.5.249,1.5.662a1.612,1.612,0,0,1,.215.086,12.371,12.371,0,0,1,1.891.933,3.387,3.387,0,0,1,1.118,1.126,3.264,3.264,0,0,1,.4,1.7,3.162,3.162,0,0,1-.636,2.046,3.557,3.557,0,0,1-1.7,1.144,7.706,7.706,0,0,1-2.424.352,12.833,12.833,0,0,1-2.2-.18,7.487,7.487,0,0,1-1.784-.516V27.254a5.746,5.746,0,0,0,1.8.86,7.043,7.043,0,0,0,1.987.318,3.418,3.418,0,0,0,1.8-.382,1.208,1.208,0,0,0,.606-1.079,1.15,1.15,0,0,0-.34-.826,3.409,3.409,0,0,0-.937-.653q-.6-.3-1.767-.791A10.044,10.044,0,0,1,10.029,23.776Z' fill='#fff'/></svg>",Text:"Sway"}
+        
+    Theme: |-
+        =//AppTheme
+        {
+            palette: {
+                themePrimary: "#00703c",
+                themeLighterAlt: "#eff9f5",
+                themeLighter: "#c3e8d7",
+                themeLight: "#95d4b6",
+                themeTertiary: "#44a97a",
+                themeSecondary: "#10814c",
+                themeDarkAlt: "#006536",
+                themeDark: "#00552d",
+                themeDarker: "#003f22",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(0,121,49,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    0,
+                    112,
+                    60,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    0,
+                    112,
+                    60,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    0,
+                    112,
+                    60,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    0,
+                    112,
+                    60,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    0,
+                    112,
+                    60,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    0,
+                    112,
+                    60,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    0,
+                    112,
+                    60,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    0,
+                    112,
+                    60,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    0,
+                    112,
+                    60,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    0,
+                    112,
+                    60,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    Visio: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#2368c4'/><stop offset='.5' stop-color='#1a5dbe'/><stop offset='1' stop-color='#1146ac'/></linearGradient></defs><rect x='23' y='13' width='21' height='20' rx='1.83' fill='#2b7cd3'/><path fill='none' d='M0 0h48v48H0z'/><path d='M34 13a1.793 1.793 0 0 1-.54 1.29L26 21.75l-.71.71a3.467 3.467 0 0 1-.29.25 1.877 1.877 0 0 1-1 .29 1.793 1.793 0 0 1-1.29-.54l-8.17-8.17A1.813 1.813 0 0 1 14.3 12a2.172 2.172 0 0 1 .24-.29l8.17-8.17a1.811 1.811 0 0 1 2.58 0l8.17 8.17A1.793 1.793 0 0 1 34 13z' fill='#41a5ee'/><path d='M34 33a10 10 0 0 1-18.66 5 7.178 7.178 0 0 1-.5-1 8.581 8.581 0 0 1-.38-1A10 10 0 0 1 24 23c.34 0 .67.02 1 .05a8.022 8.022 0 0 1 1 .15 10.017 10.017 0 0 1 8 9.8z' fill='#103f91'/><path d='M26 13.83v21.34a1.841 1.841 0 0 1-1.14 1.69 1.772 1.772 0 0 1-.69.14h-9.33a8.581 8.581 0 0 1-.38-1A10 10 0 0 1 24 23a1.793 1.793 0 0 1-1.29-.54l-8.17-8.17A1.813 1.813 0 0 1 14.3 12h9.87a1.83 1.83 0 0 1 1.62 1 1.679 1.679 0 0 1 .21.83z' opacity='.1'/><path d='M25 14.83v21.34a1.772 1.772 0 0 1-.14.69A1.841 1.841 0 0 1 23.17 38h-7.83a7.178 7.178 0 0 1-.5-1 8.581 8.581 0 0 1-.38-1A10 10 0 0 1 24 23a1.793 1.793 0 0 1-1.29-.54l-8.17-8.17A1.793 1.793 0 0 1 14 13h9.17a1.78 1.78 0 0 1 1.33.59 1.8 1.8 0 0 1 .5 1.24z' opacity='.2'/><path d='M25 14.83v19.34A1.844 1.844 0 0 1 23.17 36h-8.71A10 10 0 0 1 24 23a1.793 1.793 0 0 1-1.29-.54l-8.17-8.17A1.793 1.793 0 0 1 14 13h9.17a1.78 1.78 0 0 1 1.33.59 1.8 1.8 0 0 1 .5 1.24z' opacity='.2'/><path d='M24 14.83V23a1.793 1.793 0 0 1-1.29-.54l-8.17-8.17A1.793 1.793 0 0 1 14 13h8.17A1.837 1.837 0 0 1 24 14.83z' opacity='.2'/><path d='M24 23v11.17A1.844 1.844 0 0 1 22.17 36h-7.71A10 10 0 0 1 24 23z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M12.4 25.928q.505 1.488.6 1.878h.041q.091-.39.649-2.011l2.667-7.754h2.452l-4.525 11.917h-2.626L7.2 18.041h2.522z' fill='#fff'/></svg>",Text:"Visio"}
+        
+    Width: =195
+    Word: |+
+        ={Image: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='a' x1='5.822' y1='11.568' x2='20.178' y2='36.432' gradientUnits='userSpaceOnUse'><stop offset='0' stop-color='#2368c4'/><stop offset='.5' stop-color='#1a5dbe'/><stop offset='1' stop-color='#1146ac'/></linearGradient></defs><path d='M43.167 4H13.833A1.833 1.833 0 0 0 12 5.833V14l17 5 16-5V5.833A1.833 1.833 0 0 0 43.167 4z' fill='#41a5ee'/><path fill='#2b7cd3' d='M45 14H12v10l17 3 16-3V14z'/><path fill='#185abd' d='M12 24v10l16 2 17-2V24H12z'/><path d='M13.833 44h29.334A1.833 1.833 0 0 0 45 42.167V34H12v8.167A1.833 1.833 0 0 0 13.833 44z' fill='#103f91'/><path fill='none' d='M0 0h48v48H0z'/><path d='M24.167 12H12v25h12.167A1.839 1.839 0 0 0 26 35.167V13.833A1.839 1.839 0 0 0 24.167 12z' opacity='.1'/><path d='M23.167 13H12v25h11.167A1.839 1.839 0 0 0 25 36.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.2'/><path d='M23.167 13H12v23h11.167A1.839 1.839 0 0 0 25 34.167V14.833A1.839 1.839 0 0 0 23.167 13z' opacity='.2'/><path d='M22.167 13H12v23h10.167A1.839 1.839 0 0 0 24 34.167V14.833A1.839 1.839 0 0 0 22.167 13z' opacity='.2'/><rect x='2' y='13' width='22' height='22' rx='1.833' fill='url(#a)'/><path d='M9.522 27.058c.036.283.06.529.071.74h.042q.024-.3.1-.723t.137-.715l1.928-8.318h2.493l2 8.193a12.133 12.133 0 0 1 .249 1.546h.033a11.853 11.853 0 0 1 .208-1.5l1.595-8.243h2.269l-2.802 11.92h-2.651l-1.9-7.894c-.055-.227-.118-.524-.187-.889s-.112-.632-.129-.8h-.033q-.033.291-.129.864t-.154.848l-1.786 7.869H8.18L5.363 18.042h2.31l1.737 8.335c.039.171.076.399.112.681z' fill='#fff'/></svg>",Text:"Word"}
+        
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    imgIconO365 As image:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =64
+        Image: =cmpIconsOffice365Products.Image
+        PaddingBottom: =cmpIconsOffice365Products.PaddingBottom
+        PaddingLeft: =cmpIconsOffice365Products.PaddingLeft
+        PaddingRight: =cmpIconsOffice365Products.PaddingRight
+        PaddingTop: =cmpIconsOffice365Products.PaddingTop
+        Width: =60
+        ZIndex: =1
+
+    lblIconO365 As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =ColorValue(cmpIconsOffice365Products.Theme.palette.neutralPrimary)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: ="'Segoe UI','Arial'"
+        Height: =64
+        PaddingLeft: =0
+        Size: =cmpIconsOffice365Products.IconFontSize
+        Text: =cmpIconsOffice365Products.Icon.Text
+        Width: =Parent.Width-Self.X
+        X: =imgIconO365.Width
+        ZIndex: =2
+

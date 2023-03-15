@@ -1,0 +1,76 @@
+cmpDocumentLibrary As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    graphAPIEndpoint: |-
+        ={graphAPIEndPoint: "https://graph.microsoft.com/v1.0/sites/6f8599ba-ff2c-416e-86ae-3f522c2fb1ae/drives/b!upmFbyz_bkGGrj9SLC-xrqS7xz8goNVIkmmxEFDhVQLArGFXnSkLS6nKtwKgdmQ5/root"}
+    Height: =640
+    lib_Documents_ID: |-
+        ={DocumentsLibraryID: "b!upmFbyz_bkGGrj9SLC-xrqS7xz8goNVIkmmxEFDhVQLArGFXnSkLS6nKtwKgdmQ5"}
+    Site_ID: |-
+        ={SiteID: "6f8599ba-ff2c-416e-86ae-3f522c2fb1ae"}
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    RichTextEditor1 As richTextEditor:
+        BorderColor: =RGBA(0, 18, 107, 0)
+        Default: |-
+            ="{
+                "&Char(34)&"@odata.context"&Char(34)&": "&Char(34)&"https://graph.microsoft.com/v1.0/$metadata#sites/$entity"&Char(34)&",
+                "&Char(34)&"createdDateTime"&Char(34)&": "&Char(34)&"2021-06-22T21:26:36Z"&Char(34)&",
+                "&Char(34)&"description"&Char(34)&": "&Char(34)&"Cash Receipting Revenue Processes Subsite"&Char(34)&",
+                "&Char(34)&"id"&Char(34)&": "&Char(34)&"thenatureconservancy462.sharepoint.com,6f8599ba-ff2c-416e-86ae-3f522c2fb1ae,13b00787-d609-412f-b9c3-62b2f627e5ce"&Char(34)&",
+                "&Char(34)&"lastModifiedDateTime"&Char(34)&": "&Char(34)&"2023-02-15T01:07:47Z"&Char(34)&",
+                "&Char(34)&"name"&Char(34)&": "&Char(34)&"CashReceipting"&Char(34)&",
+                "&Char(34)&"webUrl"&Char(34)&": "&Char(34)&"https://thenatureconservancy462.sharepoint.com/sites/Department/RevenueProcessing/CashReceipting"&Char(34)&",
+                "&Char(34)&"displayName"&Char(34)&": "&Char(34)&"Cash Receipting"&Char(34)&",
+                "&Char(34)&"parentReference"&Char(34)&": {
+                    "&Char(34)&"siteId"&Char(34)&": "&Char(34)&"thenatureconservancy462.sharepoint.com,6f8599ba-ff2c-416e-86ae-3f522c2fb1ae,d4a21fd8-5d03-4f64-b736-92424508b54a"&Char(34)&"
+                }
+            }"
+        Height: =287
+        Size: =10
+        Width: =579
+        X: =30
+        Y: =19
+        ZIndex: =1
+
+    Label1_1 As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =56
+        Size: =10
+        Text: |-
+            ="Site ID: "&Char(10)&cmpDocumentLibrary.Site_ID.SiteID
+        Width: =551
+        X: =49
+        Y: =326
+        ZIndex: =2
+
+    Label1_2 As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =100
+        Size: =10
+        Text: |-
+            ="Graph API EndPoint to upload files using Office365Groups Connector:"&Char(13)&Char(13)&" "&cmpDocumentLibrary.graphAPIEndpoint.graphAPIEndPoint
+        Width: =530
+        X: =49
+        Y: =480
+        ZIndex: =3
+
+    Label1_3 As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =61
+        Size: =10
+        Text: |-
+            ="Documents ID: "&Char(10)&cmpDocumentLibrary.lib_Documents_ID.DocumentsLibraryID
+        Width: =560
+        X: =49
+        Y: =382
+        ZIndex: =4
+

@@ -1,0 +1,233 @@
+"'Landing Page' As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    Fill: =If(Global.Visibility, AppTheme.palette.RGBANeutralLighter,Color.Transparent)
+    OnHidden: =Set(varVersion,lblAppVersion_LP.Text)
+    OnVisible: =
+
+    ConScreen_LP As groupContainer.verticalAutoLayoutContainer:
+        Fill: =If(varLayout="FullWidth" && Global.Visibility,AppTheme.palette.RGBANeutralLighter, If(Global.Visibility, AppTheme.palette.RGBAPrimary10,Color.Transparent))
+        Height: =Parent.Height-Self.Y
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =16
+        Width: |
+            =If(App.ActiveScreen.Width>960 && varLayout="FormWidth", 960,If(App.ActiveScreen.Width>640 && varLayout="FormWidth",640, App.Width))
+        X: =Parent.Width/2-Self.Width/2
+        Y: =If(varLayout="FormWidth",48,0)
+        ZIndex: =1
+
+        conHeader_LP As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =48
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Visible: =Global.Visibility
+            ZIndex: =2
+
+            cmpLayoutHeader_LP As cmpLayoutHeader:
+                ButtonHover: =ColorValue(cmpLayoutHeader_LP.Theme.palette.themeDarkAlt)
+                Fill: =cmpLayoutHeader_LP.HeaderFill
+                HeaderFill: =ColorValue(cmpLayoutHeader_LP.Theme.palette.themePrimary)
+                HeaderRightText: =varUser.myProfile.surname
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                SearchBoxVisibility: =false
+                Theme: |
+                    =AppTheme
+                Visible: =true
+                Width: =Parent.Width
+
+        conSection_LP As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            imgLandingLogo_LP As image:
+                Height: =96
+                Image: =__sitelogo__Collab_Logo
+                PaddingLeft: |-
+                    =Switch(
+                    App.ActiveScreen.Size,
+                    
+                    6,48,
+                    5,36,
+                    4,24,
+                    3,12,
+                    0)
+                PaddingRight: =Self.PaddingLeft
+                Visible: =IsBlankOrError(Param("embed"))
+                Width: |-
+                    =Switch(
+                    App.ActiveScreen.Size,
+                    
+                    6,320,
+                    5,296,
+                    4,272,
+                    3,248,
+                    200)
+                X: =Parent.Width/2-Self.Width/2
+                Y: |-
+                    =Switch(
+                    App.ActiveScreen.Size,
+                    
+                    6,96,
+                    5,84,
+                    4,72,
+                    3,60,
+                    48)
+                ZIndex: =1
+
+            "galLanding_LP As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                AccessibleLabel: ="Main Screen Navigation Items"
+                AlignInContainer: =AlignInContainer.Center
+                Default: |
+                    =//LookUp(colSample,Item=varCurrentRecord)
+                FocusedBorderThickness: =1
+                Height: =Parent.Height-Self.Y
+                Items: |-
+                    =Table(
+                        {Item: "Item 01", Image:thumbnail,Link:"link01"},
+                        {Item: "Item 02", Image:RajatAmpat_goldenreef,Link:"link02"},
+                        {Item: "Item 03", Image:TNC21003_210614_07281,Link:"link03"},
+                        {Item: "Item 04", Image:WOPA131219_D338,Link:"link04"},
+                        {Item: "Item 05", Image:Barbados_Blue_Bond_Hawksbill_Shane_Gross,Link:"link05"},
+                        {Item: "Item 06", Image:TNC_PC2022_WILTON_JAKE_DSC_2942_JPG,Link:"link06"}
+                    )
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                OnSelect: =Navigate('Gallery Screen',ScreenTransition.Fade)
+                ShowScrollbar: =false
+                TabIndex: =0
+                TemplatePadding: =30
+                TemplateSize: =150
+                Width: |-
+                    =//gallery width based on app SizeBreakpoints
+                    
+                    Switch(App.ActiveScreen.Size,
+                            8,960,
+                            7,960,
+                            6,960,
+                            5,960,
+                            4,640,
+                            3,640,
+                            App.ActiveScreen.Width
+                            )
+                            
+                WrapCount: |-
+                    =//Switch(App.ActiveScreen.Size,8,6,7,5,6,4,5,3,4,2,3,2,1)
+                    
+                        
+                        If(galLanding_LP.Width<640,1,
+                        If(galLanding_LP.Width<960,2,
+                        If(galLanding_LP.Width<960 ,2,
+                        If(galLanding_LP.Width<1280 ,3,
+                        If(galLanding_LP.Width<1600 ,4,
+                        If(galLanding_LP.Width<1920,5,
+                        If(galLanding_LP.Width<2240,6,
+                        If(galLanding_LP.Width<2560,7,
+                        1
+                        ))))))))
+                X: =Parent.Width/2-Self.Width/2
+                Y: =imgLandingLogo_LP.Y+imgLandingLogo_LP.Height+10
+                ZIndex: =2
+
+                "cmpElevation_LP As 'Fluent Elevation (1.0.19)'":
+                    Depth: ='PowerCAT.Elevation.Depth'.Depth4
+                    DisplayMode: =DisplayMode.Edit
+                    FillColor: |+
+                        =AppTheme.palette.neutralLighter
+                        
+                        
+                    Height: =Parent.TemplateHeight
+                    HoverDepth: ='PowerCAT.Elevation.HoverDepth'.Depth16
+                    OnChange: =Set(varCurrentRecord,galLanding_LP.Selected.Item)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Tooltip: =""
+                    Visible: =true
+                    Width: =Parent.TemplateWidth
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                imgGallery_LP As image:
+                    BorderColor: |+
+                        =ColorValue(AppTheme.palette.neutralLighter)
+                        
+                    Fill: |+
+                        =ColorValue(AppTheme.palette.neutralLighter)
+                        
+                    Height: =Parent.TemplateHeight-2
+                    Image: =ThisItem.Image
+                    ImagePosition: =ImagePosition.Fill
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =2
+                    PaddingLeft: =2
+                    PaddingRight: =2
+                    PaddingTop: =2
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Width: =Parent.TemplateWidth-2
+                    X: =1
+                    Y: =1
+                    ZIndex: =3
+
+                lblTitles_LP As label:
+                    Color: =ColorValue(AppTheme.palette.themeLighter)
+                    Fill: =RGBA(106, 105, 107, 0.56)
+                    Font: =Body.FontBody.Font
+                    FontWeight: =FormsStyle.FontBody.FontWeight
+                    Height: =Parent.TemplateHeight/4
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =20
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =If(App.ActiveScreen.Size>2,Body.FontBody.Size3,Body.FontBody.Size1)
+                    Text: =ThisItem.Item
+                    Width: =Parent.TemplateWidth-Self.X*2
+                    X: =3
+                    Y: =Parent.TemplateHeight-Self.Height-3
+                    ZIndex: =4
+
+            lblAppVersion_LP As label:
+                AlignInContainer: =AlignInContainer.Start
+                AutoHeight: =true
+                Color: =If(Self.Text<>Last(colAppVersionVerify).AppVersionTxt,Color.Red,Color.Black)
+                Font: =Body.FontBody.Font
+                Height: =If(galLanding_LP.Width<640,26,23)
+                PaddingLeft: =If(App.ActiveScreen.Size>3,62,16)
+                PaddingTop: =If(galLanding_LP.Width<640,16,5)
+                Size: =Body.FontBody.Size5
+                Text: =101
+                Width: =100
+                ZIndex: =4
+
+        conFooter_LP As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Visible: =false
+            ZIndex: =4
+
+    lblAppVersionVerify As label:
+        Text: =Last(colAppVersionVerify).AppVersionTxt
+        Visible: =false
+        X: =51
+        Y: =1086
+        ZIndex: =2
+

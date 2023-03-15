@@ -1,0 +1,1399 @@
+"'Edit Screen' As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    Fill: =AppTheme.palette.RGBANeutralLighter
+    OnHidden: =Set(varFormItemKey,Blank())
+    OnVisible: =Set(varFormItemKey,"General");Set(varForm,FormMode.View)
+
+    conScreen_HM_1 As groupContainer.verticalAutoLayoutContainer:
+        Fill: =ColorValue(AppTheme.palette.white)
+        Height: =Parent.Height-Self.Y
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: |
+            =If(App.ActiveScreen.Width>960 && varLayout="FormWidth", 960,If(App.ActiveScreen.Width>640 && varLayout="FormWidth",640, Parent.Width))
+        X: =Parent.Width/2-Self.Width/2
+        Y: =If(varLayout="FormWidth",48,0)
+        ZIndex: =1
+
+        conHeader_HM_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            FillPortions: =0
+            Height: =48
+            LayoutMinHeight: =100
+            LayoutMinWidth: =Parent.Width
+            LayoutMode: =LayoutMode.Auto
+            Visible: =Global.Visibility
+            Width: =Parent.Width
+            ZIndex: =2
+
+            cmpLayoutHeader_HM_1 As cmpLayoutHeader:
+                ButtonHover: =ColorValue(cmpLayoutHeader_HM_1.Theme.palette.themeDarkAlt)
+                Fill: =cmpLayoutHeader_HM_1.HeaderFill
+                HeaderFill: =ColorValue(cmpLayoutHeader_HM_1.Theme.palette.themePrimary)
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                ProfileVisibility: =teamsVisibility.Visibility 
+                SearchBoxVisibility: =false
+                Theme: |
+                    =AppTheme
+                Visible: =IsBlankOrError(Param("embed"))
+                Width: =Parent.Width
+
+        conMainSection_HM_1 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =If(App.ActiveScreen.Size<=3,(Self.Width-conRight_HM_1.Width)/2,0)
+            Width: =Parent.Width
+            ZIndex: =3
+
+            conAppPanel_HM_1 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =If(teamsVisibility.Visibility, AppTheme.palette.RGBANeutralLighter,Color.Transparent)
+                FillPortions: =0
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =16
+                Visible: =App.ActiveScreen.Size>3 && Global.Visibility && varLayout="FullWidth"
+                Width: =48
+                ZIndex: =1
+
+                conIconTeams_HM_1 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =48
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    Visible: =teamsVisibility.Visibility 
+                    Width: =48
+                    ZIndex: =1
+
+                    cmpIconsOffice365ProductsTeams_HM_1 As cmpIconsOffice365Products:
+                        Height: =48
+                        Icon: =cmpIconsOffice365ProductsTeams_HM_1.MicrosoftTeams
+                        Image: |+
+                            ="data:image/svg+xml,"&EncodeUrl(cmpIconsOffice365ProductsTeams_HM_1.Icon.Image)
+                            
+                        PaddingLeft: =12
+                        PaddingRight: =24
+                        PaddingTop: =0
+                        Width: =48
+
+                    btnTeams_HM_1 As button:
+                        Fill: =Color.Transparent
+                        Height: =Parent.Height
+                        HoverFill: =AppTheme.palette.RGBAPrimary20
+                        OnSelect: |-
+                            =Launch("https://teams.microsoft.com/l/channel/19%3adxog41AvifFczjJs-FanV6YbAB5bV5fatjvRRp0qqGs1%40thread.tacv2/General?groupId=57eeb469-c31b-41ca-bfe5-828422a4327d&tenantId=79be6dc1-d78e-4bbb-b22b-d994c0a417a7")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedFill: =AppTheme.palette.RGBAPrimary40
+                        Text: =""
+                        Tooltip: ="Open Team"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                conIconSharePoint_HM_1 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =48
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    Visible: =teamsVisibility.Visibility 
+                    Width: =48
+                    ZIndex: =2
+
+                    cmpIconsOffice365ProductsSharePoint_HM_1 As cmpIconsOffice365Products:
+                        Height: =48
+                        Icon: =cmpIconsOffice365ProductsSharePoint_HM_1.SharePoint
+                        Image: |+
+                            ="data:image/svg+xml,"&EncodeUrl(cmpIconsOffice365ProductsSharePoint_HM_1.Icon.Image)
+                            
+                        PaddingLeft: =12
+                        PaddingRight: =24
+                        PaddingTop: =0
+                        Width: =48
+
+                    btnSharePoint_HM_1 As button:
+                        Fill: =Color.Transparent
+                        Height: =Parent.Height
+                        HoverFill: =AppTheme.palette.RGBAPrimary20
+                        OnSelect: |-
+                            =Launch("https://thenatureconservancy462.sharepoint.com/teams/wo-IT-CollaborationAtTnc-Standards")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedFill: =AppTheme.palette.RGBAPrimary40
+                        Text: =""
+                        Tooltip: ="Open SharePoint site"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                conIconOneNote_HM_1 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =48
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    Visible: =teamsVisibility.Visibility 
+                    Width: =48
+                    ZIndex: =3
+
+                    cmpIconsOffice365ProductsOneNote_HM_1 As cmpIconsOffice365Products:
+                        Height: =48
+                        Icon: =cmpIconsOffice365ProductsOneNote_HM_1.OneNote
+                        Image: |+
+                            ="data:image/svg+xml,"&EncodeUrl(cmpIconsOffice365ProductsOneNote_HM_1.Icon.Image)
+                            
+                        PaddingLeft: =12
+                        PaddingRight: =24
+                        PaddingTop: =0
+                        Width: =48
+
+                    btnOneNote_HM_1 As button:
+                        Fill: =Color.Transparent
+                        Height: =Parent.Height
+                        HoverFill: =AppTheme.palette.RGBAPrimary20
+                        OnSelect: |-
+                            =Launch("https://thenatureconservancy462.sharepoint.com/teams/wo-IT-CollaborationAtTnc-Standards/_layouts/15/Doc.aspx?sourcedoc={7ae50a73-46f0-40e4-8abc-9fac49a5f507}&action=editnew")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedFill: =AppTheme.palette.RGBAPrimary40
+                        Text: =""
+                        Tooltip: ="Open team note book"
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                shpAppPanelSeparator_1 As rectangle:
+                    AlignInContainer: =AlignInContainer.Start
+                    Fill: =AppTheme.palette.RGBAPrimary40
+                    Height: =1
+                    Visible: =teamsVisibility.Visibility 
+                    Width: =Parent.Width
+                    ZIndex: =4
+
+                conIconDocumentLibrary_HM_1 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =48
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    Visible: =teamsVisibility.Visibility 
+                    Width: =48
+                    ZIndex: =5
+
+                    "icoDocumentLibrary_HM_1 As 'Fluent Icon (1.0.19)'":
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =48
+                        IconName: ="Library"
+                        IconSize: =16
+                        IconType: ='PowerCAT.Icon.IconType'.Icon
+                        TextAlignment: ='PowerCAT.Icon.TextAlignment'.Center
+                        Width: =48
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                    btnDocumentLibrary_HM_1 As button:
+                        Fill: =Color.Transparent
+                        Height: =Parent.Height
+                        HoverFill: =AppTheme.palette.RGBAPrimary20
+                        OnSelect: |-
+                            =Launch("https://thenatureconservancy462.sharepoint.com/teams/wo-IT-CollaborationAtTnc-Standards/Shared%20Documents/")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedFill: =AppTheme.palette.RGBAPrimary40
+                        Text: =""
+                        Tooltip: ="Open Team library"
+                        Width: =Parent.Width
+                        ZIndex: =4
+
+                conIconMyFiles_HM_1 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =48
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    Visible: =teamsVisibility.Visibility 
+                    Width: =48
+                    ZIndex: =6
+
+                    "IconMyFiles_HM_1 As 'Fluent Icon (1.0.19)'":
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =48
+                        IconName: ="FabricFolder"
+                        IconSize: =16
+                        IconType: ='PowerCAT.Icon.IconType'.Icon
+                        TextAlignment: ='PowerCAT.Icon.TextAlignment'.Center
+                        Width: =48
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                    btnMyFiles_HM_1 As button:
+                        Fill: =Color.Transparent
+                        Height: =Parent.Height
+                        HoverFill: =AppTheme.palette.RGBAPrimary20
+                        OnSelect: |-
+                            =Launch("https://thenatureconservancy462-my.sharepoint.com")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedFill: =AppTheme.palette.RGBAPrimary40
+                        Text: =""
+                        Tooltip: ="Open my files"
+                        Width: =Parent.Width
+                        ZIndex: =4
+
+            conLeft_HM_1 As groupContainer.verticalAutoLayoutContainer:
+                BorderColor: =AppTheme.palette.RGBANeutralLighter
+                BorderThickness: =1
+                Fill: |+
+                    =//ColorValue(AppTheme.palette.neutralLighter)
+                    
+                    ColorValue(AppTheme.palette.white)
+                    
+                FillPortions: =0
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =16
+                PaddingTop: =16
+                Visible: =App.ActiveScreen.Size>3 && Global.Visibility  && varLayout="FullWidth"
+                Width: =If(Self.Visible, 227,0)
+                Y: =48
+                ZIndex: =2
+
+                cmpLayoutLeftNavPanel_Static_HM_1 As cmpLayoutLeftNavPanel_Static:
+                    HamburgerMenuColor: =Colors.Primary1
+                    LayoutMinWidth: =640
+                    MenuColor: =Colors.Primary1
+                    MenuItems: =colMenuNav
+                    ZIndex: =1
+
+                lblAppVersion_HM_1 As label:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    AutoHeight: =true
+                    Font: =Body.FontBody.Font
+                    PaddingLeft: =16
+                    Size: =Body.FontBody.Size5
+                    Text: |-
+                        =/*The text box on the lower left side of the landing page contains the value of the variable; The variable is set with the OnHidden of the page */
+                        varVersion
+                    ZIndex: =2
+
+            conRight_HM_1 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                PaddingLeft: =If(varLayout="FormWidth",0, 20)
+                PaddingRight: =If(varLayout="FormWidth",0, 20)
+                PaddingTop: =16
+                Width: =If(varLayout="FormWidth" , conHeader_HM_1.Width,Parent.Width-conLeft_HM_1.Width-conAppPanel_HM_1.Width)
+                ZIndex: =3
+
+                conSubHeader_HM_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =48
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =20
+                    ZIndex: =1
+
+                    lblSubHeader_HM_1 As label:
+                        Text: =varCurrentContact.LastNm&", "&varCurrentContact.FirstNm
+                        Width: =300
+                        ZIndex: =1
+
+                    conSubHeaderContainer_HM_1 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        Height: =Parent.Height
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        ZIndex: =4
+
+                        "icoOpenInWeb_1 As 'Fluent Icon (1.0.19)'":
+                            DisplayMode: =DisplayMode.Edit
+                            Height: =Parent.Height
+                            IconName: ="Globe"
+                            IconSize: =16
+                            IconType: ='PowerCAT.Icon.IconType'.IconButon
+                            InputEvent: =
+                            LayoutMinHeight: =200
+                            LayoutMinWidth: =200
+                            OnChange: =Launch(PowerAppsforMakers.GetApp("d1351f92-3cb1-416c-997d-28a19e668738").properties.appOpenUri&"&hidenavbar=true")
+                            TextAlignment: ='PowerCAT.Icon.TextAlignment'.Center
+                            Theme: =AppThemeJson
+                            Tooltip: ="Open app in web browser"
+                            Visible: |
+                                =!Global.Visibility
+                            Width: =48
+                            X: =0
+                            Y: =0
+                            ZIndex: =1
+
+                        "icoContextMenu_HM_1 As 'Fluent Context Menu (1.0.19)'.pcfdataset":
+                            AccessibilityLabel: ="Menu"
+                            AlignInContainer: =AlignInContainer.Start
+                            BorderColor: |-
+                                ="#FFFFFF00"
+                            Chevron: =false
+                            DisplayMode: =DisplayMode.Edit
+                            FillColor: |-
+                                ="#FFFFFF00"
+                            Height: =Parent.Height
+                            HoverFillColor: =AppTheme.palette.neutralLighter
+                            IconColor: =AppTheme.palette.themePrimary
+                            IconSize: =16
+                            Items: |-
+                                =Table(
+                                       {
+                                          ItemKey: "Menu",
+                                          ItemIconName: "CollapseMenu",
+                                          ItemDisplayName: "",
+                                          ItemOverflow:true
+                                      },
+                                      {
+                                          ItemKey: "Gallery",
+                                          ItemIconName: "GridViewMedium",
+                                          ItemDisplayName: "Gallery Screen",
+                                          ItemOverflow:true
+                                      },
+                                      {
+                                          ItemKey: "Form",
+                                          ItemIconName: "PageEdit",
+                                          ItemDisplayName: "Form Screen",
+                                          ItemOverflow:true
+                                      },
+                                       {
+                                          ItemKey: "Email",
+                                          ItemIconName: "Send",
+                                          ItemDisplayName: "Email Screen",
+                                          ItemOverflow:true
+                                      },
+                                       {
+                                          ItemKey: "Print",
+                                          ItemIconName: "print",
+                                          ItemDisplayName: "Print Screen",
+                                          ItemOverflow:true
+                                      }
+                                  )
+                            LayoutMinHeight: =200
+                            LayoutMinWidth: =150
+                            OnSelect: |-
+                                = Switch( Self.Selected.ItemKey,
+                                
+                                    "Gallery", Navigate('Gallery Screen',ScreenTransition.Fade),
+                                    
+                                    "Form", Blank(),
+                                    
+                                    "Email", Navigate('Email Screen',ScreenTransition.Fade),
+                                    
+                                    "Print",Navigate('Print Screen')
+                                    
+                                 )
+                            TextAlignment: ='PowerCAT.ContextMenu.TextAlignment'.Center
+                            Theme: =AppThemeJson
+                            Tooltip: ="App navigation"
+                            Visible: |
+                                =!Global.Visibility
+                            Width: =72
+                            X: =Parent.Width-Self.Width
+                            Y: =Parent.Height-Self.Height
+                            ZIndex: =2
+
+                shpMenuSeparator_HM_3 As rectangle:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Fill: =Colors.Neutral1
+                    Height: =1
+                    ZIndex: =2
+
+                conRightMenuTop_HM_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =5
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =20
+                    ZIndex: =3
+
+                    "CommandBar_ED As 'Fluent Command Bar (1.0.19)'.pcfdataset":
+                        DisplayMode: =DisplayMode.Edit
+                        FillPortions: =1
+                        Height: =Parent.Height
+                        Items: |-
+                            =Table(
+                                
+                                {
+                                    ItemKey: "Edit",
+                                    ItemDisplayName: "Edit",
+                                    ItemIconName: "edit"
+                                },{
+                                    ItemKey: "Save",
+                                    ItemDisplayName: "Save",
+                                    ItemIconName: "save"
+                                },{
+                                    ItemKey: "Cancel",
+                                    ItemDisplayName: "Cancel",
+                                    ItemIconName: "cancel"
+                                },{
+                                    ItemKey: "Delete",
+                                    ItemDisplayName: "Delete",
+                                    ItemIconName: "delete"
+                                }
+                            )
+                              
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =200
+                        OnSelect: |-
+                            = Switch( Self.Selected.ItemKey,
+                            
+                                "Edit", Set(varForm,FormMode.Edit),
+                                
+                                "Save", Set(varForm,FormMode.View),
+                                
+                                "Cancel", Set(varForm,FormMode.View),
+                                
+                                "Delete", Set(varForm,FormMode.View)
+                            
+                                
+                              )
+                        Theme: =AppThemeJson
+                        Width: =200
+                        X: =0
+                        Y: =0
+                        ZIndex: =3
+
+                conRightMenuBottom_HM_1 As groupContainer.horizontalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =50
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =5
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =30
+                    ZIndex: =4
+
+                    "IcoBack_ED_1 As 'Fluent Icon (1.0.19)'":
+                        DisplayMode: =DisplayMode.Edit
+                        FontSize: =1
+                        Height: =Parent.Height
+                        IconName: ="NavigateBack"
+                        IconSize: =25
+                        IconType: ='PowerCAT.Icon.IconType'.IconButon
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =200
+                        OnChange: =Back()
+                        Text: ="Back"
+                        Theme: =AppThemeJson
+                        Tooltip: ="Navigate to previous screen"
+                        Width: =39
+                        X: =0
+                        Y: =0
+                        ZIndex: =1
+
+                    "cmpPivotFormTabs_ED As 'Fluent Pivot (1.0.19)'.pcfdataset":
+                        DisplayMode: =DisplayMode.Edit
+                        FillPortions: =1
+                        Height: =Parent.Height
+                        Items: |-
+                            =Table(
+                                
+                                {
+                                    ItemKey: "General",
+                                    ItemDisplayName: "General Information",
+                                    ItemIconName: "SunQuestionMark"
+                                },{
+                                    ItemKey: "Details",
+                                    ItemDisplayName: "Record Details",
+                                    ItemIconName: "boards"
+                                },{
+                                    ItemKey: "Additional",
+                                    ItemDisplayName: "Additional Details",
+                                    ItemIconName: "AddNotes"
+                                }
+                            )
+                        LayoutMinHeight: =200
+                        LayoutMinWidth: =200
+                        OnChange: =
+                        OnSelect: |-
+                            =Switch( Self.Selected.ItemKey,
+                                
+                                "General", false,
+                                
+                                "Details",Set(varFormItemKey,Blank()),
+                                
+                                "Additional", Set(varFormItemKey,Blank());
+                                
+                              )
+                        SelectedKey: =If(IsBlankOrError(varFormItemKey),"General",varFormItemKey)
+                        Theme: =AppThemeJson
+                        Width: =200
+                        X: =0
+                        Y: =0
+                        ZIndex: =2
+
+                        ItemDisplayName1_2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="ItemDisplayName"
+                            FieldName: ="ItemDisplayName"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =1
+                            ZIndex: =8
+
+                        ItemIconName1_2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="ItemIconName"
+                            FieldName: ="ItemIconName"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =2
+                            ZIndex: =9
+
+                        ItemKey1_2 As pcfDataField.textualColumn:
+                            FieldDisplayName: ="ItemKey"
+                            FieldName: ="ItemKey"
+                            FieldType: ="s"
+                            FieldVariantName: ="textualColumn"
+                            Order: =3
+                            ZIndex: =10
+
+                shpMenuSeparator_HM_4 As rectangle:
+                    AlignInContainer: =AlignInContainer.Stretch
+                    Fill: =Colors.Neutral1
+                    Height: =1
+                    ZIndex: =5
+
+                conRightBody_HM_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =conRight_HM_1.Height-conSubHeader_HM_1.Height-conRightMenuTop_HM_1.Height-conFooter_HM_1.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowY: =LayoutOverflow.Scroll
+                    Width: |-
+                        =
+                                If(varLayout="FormWidth", Parent.Width,
+                        If(conLeft_HM_1.Visible=true,
+                        Switch(App.ActiveScreen.Size,
+                                8,1920,
+                                7,1600,
+                                6,1280,
+                                5,960,
+                                4,640,
+                                3,640,
+                                Parent.Width
+                                ),
+                                Switch(App.ActiveScreen.Size,
+                                7,1920,
+                                6,1600,
+                                5,1280,
+                                4,960,
+                                3,640,
+                                Parent.Width
+                                )
+                        ))
+                    ZIndex: =6
+
+                    shpMenuSeparator_HM_5 As rectangle:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        Fill: =Colors.Neutral1
+                        Height: =1
+                        ZIndex: =3
+
+                    lblAppVersionMobile_HM_1 As label:
+                        AlignInContainer: =AlignInContainer.Stretch
+                        AutoHeight: =true
+                        Font: =Body.FontBody.Font
+                        Height: =60
+                        PaddingLeft: =32
+                        PaddingTop: =8
+                        Size: =Body.FontBody.Size5
+                        Text: =lblAppVersion_HM_1.Text
+                        Visible: |
+                            =!conLeft_HM_1.Visible
+                        ZIndex: =4
+
+                    Form1 As form:
+                        DataSource: =List_Contacts
+                        DefaultMode: =varForm
+                        Item: =varCurrentContact
+                        LayoutMinHeight: =250
+                        LayoutMinWidth: =400
+                        NumberOfColumns: =2
+                        Visible: = cmpPivotFormTabs_ED.Selected.ItemKey="General"
+                        ZIndex: =5
+
+                        Attachments_DataCard2 As typedDataCard.attachmentsEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="{Attachments}"
+                            Default: =ThisItem.Attachments
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"{Attachments}")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            Required: =false
+                            Update: =DataCardValue11.Attachments
+                            Width: =640
+                            X: =1
+                            Y: =4
+                            ZIndex: =1
+
+                            DataCardKey11 As label:
+                                AutoHeight: =true
+                                Height: =34
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue11 As attachments:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                DisplayMode: =Parent.DisplayMode
+                                IsInDataCard: =true
+                                Items: =Parent.Default
+                                PaddingBottom: =5
+                                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                                PaddingRight: =5
+                                PaddingTop: =5
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage11 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue11.Y + DataCardValue11.Height
+                                ZIndex: =3
+
+                            StarVisible11 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey11.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey11.Y
+                                ZIndex: =4
+
+                        Title_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Title"
+                            Default: =ThisItem.Title
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"Title")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "Title")
+                            Required: =false
+                            Update: =DataCardValue1.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =0
+                            Y: =0
+                            ZIndex: =6
+
+                            DataCardKey1 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue1 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage1 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue1.Y + DataCardValue1.Height
+                                ZIndex: =3
+
+                            StarVisible1 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey1.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey1.Y
+                                ZIndex: =4
+
+                        FirstNm_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="FirstNm"
+                            Default: =ThisItem.FirstNm
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"FirstNm")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "FirstNm")
+                            Required: =false
+                            Update: =DataCardValue3.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =1
+                            Y: =0
+                            ZIndex: =6
+
+                            DataCardKey3 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue3 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage3 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue3.Y + DataCardValue3.Height
+                                ZIndex: =3
+
+                            StarVisible3 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey3.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey3.Y
+                                ZIndex: =4
+
+                        MiddleNm_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="MiddleNm"
+                            Default: =ThisItem.MiddleNm
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"MiddleNm")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "MiddleNm")
+                            Required: =false
+                            Update: =DataCardValue4.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =0
+                            Y: =1
+                            ZIndex: =6
+
+                            DataCardKey4 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue4 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage4 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue4.Y + DataCardValue4.Height
+                                ZIndex: =3
+
+                            StarVisible4 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey4.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey4.Y
+                                ZIndex: =4
+
+                        LastNm_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="LastNm"
+                            Default: =ThisItem.LastNm
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"LastNm")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "LastNm")
+                            Required: =false
+                            Update: =DataCardValue5.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =1
+                            Y: =1
+                            ZIndex: =6
+
+                            DataCardKey5 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue5 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage5 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue5.Y + DataCardValue5.Height
+                                ZIndex: =3
+
+                            StarVisible5 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey5.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey5.Y
+                                ZIndex: =4
+
+                        Suffix_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Suffix"
+                            Default: =ThisItem.Suffix
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"Suffix")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "Suffix")
+                            Required: =false
+                            Update: =DataCardValue6.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =0
+                            Y: =2
+                            ZIndex: =6
+
+                            DataCardKey6 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue6 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage6 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue6.Y + DataCardValue6.Height
+                                ZIndex: =3
+
+                            StarVisible6 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey6.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey6.Y
+                                ZIndex: =4
+
+                        Company_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Company"
+                            Default: =ThisItem.Company
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"Company")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "Company")
+                            Required: =false
+                            Update: =DataCardValue7.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =1
+                            Y: =2
+                            ZIndex: =6
+
+                            DataCardKey7 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue7 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage7 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue7.Y + DataCardValue7.Height
+                                ZIndex: =3
+
+                            StarVisible7 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey7.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey7.Y
+                                ZIndex: =4
+
+                        Dept_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Dept"
+                            Default: =ThisItem.Dept
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"Dept")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "Dept")
+                            Required: =false
+                            Update: =DataCardValue8.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =0
+                            Y: =3
+                            ZIndex: =6
+
+                            DataCardKey8 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue8 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage8 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue8.Y + DataCardValue8.Height
+                                ZIndex: =3
+
+                            StarVisible8 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey8.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey8.Y
+                                ZIndex: =4
+
+                        JobTtl_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="JobTtl"
+                            Default: =ThisItem.JobTtl
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"JobTtl")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "JobTtl")
+                            Required: =false
+                            Update: =DataCardValue9.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =1
+                            Y: =3
+                            ZIndex: =6
+
+                            DataCardKey9 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue9 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage9 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue9.Y + DataCardValue9.Height
+                                ZIndex: =3
+
+                            StarVisible9 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey9.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey9.Y
+                                ZIndex: =4
+
+                        Email_DataCard1 As typedDataCard.textualEditCard:
+                            BorderStyle: =BorderStyle.Solid
+                            DataField: ="Email"
+                            Default: =ThisItem.Email
+                            DisplayMode: =Parent.DisplayMode
+                            DisplayName: =DataSourceInfo([@List_Contacts],DataSourceInfo.DisplayName,"Email")
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Height: =50
+                            MaxLength: =DataSourceInfo([@List_Contacts], DataSourceInfo.MaxLength, "Email")
+                            Required: =false
+                            Update: =DataCardValue10.Text
+                            Width: =640
+                            WidthFit: =true
+                            X: =0
+                            Y: =4
+                            ZIndex: =6
+
+                            DataCardKey10 As label:
+                                AutoHeight: =true
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                Height: =34
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Text: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                Wrap: =false
+                                X: =30
+                                Y: =10
+                                ZIndex: =1
+
+                            DataCardValue10 As text:
+                                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                                Color: =AppTheme.palette.RGBANeutralPrimary
+                                Default: =Parent.Default
+                                DelayOutput: =true
+                                DisplayMode: =Parent.DisplayMode
+                                Fill: =Colors.HoverGray
+                                Font: =Body.FontBody.Font
+                                FontWeight: =FontWeight.Semibold
+                                MaxLength: =Parent.MaxLength
+                                PaddingLeft: =20
+                                Size: =Body.FontBody.Size3
+                                Tooltip: =Parent.DisplayName
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                                ZIndex: =2
+
+                            ErrorMessage10 As label:
+                                AutoHeight: =true
+                                Height: =10
+                                Live: =Live.Assertive
+                                PaddingBottom: =0
+                                PaddingLeft: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Text: =Parent.Error
+                                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                                Width: =Parent.Width - 60
+                                X: =30
+                                Y: =DataCardValue10.Y + DataCardValue10.Height
+                                ZIndex: =3
+
+                            StarVisible10 As label:
+                                Align: =Align.Center
+                                Height: =DataCardKey10.Height
+                                Text: ="*"
+                                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                Width: =30
+                                Wrap: =false
+                                Y: =DataCardKey10.Y
+                                ZIndex: =4
+
+        conFooter_HM_1 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            Visible: =false
+            ZIndex: =4
+

@@ -1,0 +1,278 @@
+cmpLayoutHeader As CanvasComponent:
+    ButtonHover: =ColorValue(cmpLayoutHeader.Theme.palette.themeDarkAlt)
+    Fill: =cmpLayoutHeader.HeaderFill
+    HeaderFill: =ColorValue(cmpLayoutHeader.Theme.palette.themePrimary)
+    HeaderImage: |-
+        ="data:image/svg+xml,"&EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='a' data-name='Layer 1' viewBox='0 0 48.07 48.06'>
+          <defs>
+            <clipPath id='c'>
+              <rect y='0' width='48.07' height='48.06' style='fill: none;'/>
+            </clipPath>
+            <clipPath id='d'>
+              <rect y='0' width='48.07' height='48.06' style='fill: none;'/>
+            </clipPath>
+          </defs>
+          <g id='b' data-name='Avatar'>
+            <g style='clip-path: url(#c);'>
+              <g style='clip-path: url(#d);'>
+                <path d='m26.57,7.41c-.15.87-.21,3.02,1.04,2.74,1.67-.36,1.45-.53,2.37-1.33.61-.54,2.11.93.02,3.25-1.14,1.27-1.39,1.67-.78,2.4.63.76,2.29,1.06,2.29,3.41,0,2.07,2.65.57,3.3-.24.63-.79,1.09-4.39,2.88-1.77,1.27,1.86-.9,5.85,1.71,6.24,2.14.32,2.52,2.76,2.58,3.39,0,.09.01.14.01.14,5.48-5.26,1.83-12.07,1.69-12.89-.24-1.48.56-.94,1.54-.03C41.18,5.16,33.21,0,24.03,0,22.45,0,20.9.16,19.4.45c4.73.1,8.03,1.99,7.17,6.96' style='fill: #fff;'/>
+                <path d='m39.15,36.34c-1.47.59-2.11-.36-3.21.71-1.2,1.17,2.64,3.48-4.43,1.86-3.16-.72-2.73,2.71-6.28.91-.98-2.34-1.01-3.72-.17-5.18.98-1.71,1.33-1.14.73-3.02-.23-.74,0-1.06.38-2.09.39-1.03-.11-2.45-1.55-2.37-1.92.11-1.7.98-2.89,1.78-.8.53-2.14-2.17.68-4.61,1.54-1.33,1.9-1.76,1.39-2.78-.53-1.06-1.5-.68-1.9-1.9-.3-.94.17-2.71-1.18-3.13-1.53-.48-2.76,1.71-3.64,2.57-1.03,1-2.16,2.78-2.71,1.36-.98-2.53,3.54-6.31.75-7.31-2.62-.94-3.48-3.7-3.48-3.7-7.2,5.34-3.79,10.04-4.39,10.87-.6.83-1.76-1.01-2.73-.13-.75.68-1.42,5.05,3.2,7.82,1.75,1.05,2.32,1.32,1.9,1.95-.34.5-1.73.08-1.71,1.23.05,2.31,3.76,1.62,4.44,4.52.63,2.71,12.15,4.33,12.15,4.33-.01-.01.05,0,.15.03l.55.3c.17.71.86,2.35,2.46,3.17,2.65,1.36-.16.71.2,1.67.18.49,2.06,1.76,5.41.99,4.62-1.93,8.51-5.27,11.14-9.48-2.86-2.23-3.07-1.77-5.25-.41' style='fill: #fff;'/>
+                <path d='m24.65,40.08c-.09-.03-.16-.05-.15-.03,0,0-11.52-1.62-12.15-4.33-.68-2.9-4.39-2.2-4.44-4.52-.02-1.15,1.38-.73,1.71-1.23.42-.64-.15-.9-1.9-1.95-4.62-2.77-3.95-7.14-3.2-7.82.97-.88,2.13.96,2.73.13.6-.83-2.81-5.53,4.39-10.87,0,0,.85,2.76,3.48,3.7,2.79,1-1.73,4.78-.75,7.31.55,1.42,1.68-.36,2.71-1.36.88-.86,2.1-3.05,3.64-2.57,1.35.42.88,2.19,1.18,3.13.39,1.22,1.37.84,1.9,1.9.51,1.02.15,1.45-1.39,2.78-2.81,2.43-1.47,5.14-.68,4.61,1.19-.8.96-1.67,2.89-1.78,1.44-.08,1.94,1.34,1.55,2.37-.39,1.03-.62,1.35-.38,2.09.59,1.89.24,1.31-.73,3.02-.84,1.46-.81,2.84.17,5.18,3.55,1.8,3.12-1.63,6.28-.91,7.07,1.61,3.23-.69,4.43-1.86,1.09-1.07,1.73-.12,3.21-.71,2.18-1.37,2.39-1.83,5.27.42,2.31-3.69,3.65-8.05,3.65-12.73,0-4.07-1.01-7.9-2.8-11.26-1-.93-1.83-1.51-1.59-.01.14.83,3.79,7.63-1.69,12.89,0,0,0-.06-.01-.14-.06-.62-.44-3.06-2.58-3.39-2.61-.39-.44-4.38-1.71-6.24-1.79-2.62-2.25.98-2.88,1.77-.64.81-3.3,2.31-3.3.24,0-2.35-1.65-2.65-2.29-3.41-.61-.74-.36-1.13.78-2.4,2.08-2.33.59-3.79-.02-3.25-.92.8-.7.97-2.37,1.33-1.25.27-1.2-1.87-1.04-2.74.87-4.97-2.44-6.86-7.18-6.96C8.34,2.62,0,12.35,0,24.03,0,37.3,10.76,48.06,24.03,48.06c3.28,0,6.4-.66,9.25-1.85-3.35.78-5.24-.5-5.42-.99-.36-.96,2.45-.31-.2-1.67-1.6-.82-2.29-2.46-2.46-3.17l-.55-.3Z' style='fill: #49aa42;'/>
+                <path d='m26,40.82s-15.8-6.13-16.35-21.68c0,0,1.53,11.82,16.35,21.68' style='fill: #49aa42;'/>
+                <path d='m25.89.04c.45.05,3.85.5,7.45,2.8,1.34,1.25,3.23,4.32.31,10.61,0,0,3.74-5.05,2.8-8.11,3.14,3.15,5.77,8.13,5.87,16.04,0,0,3.49-19.8-16.42-21.33' style='fill: #49aa42;'/>
+                <path d='m41.68,39.32c-1.2.73-3.16,2.45-6.36,1.45,0,0,1.25.96,3.26.91-2.57,1.32-5.35,1.64-9.75.54,0,0,8.91,5.26,15.14-4.8,0,0-1.55,1.45-2.29,1.91' style='fill: #49aa42;'/>
+              </g>
+            </g>
+          </g>
+        </svg>")
+    HeaderRightText: =App.ActiveScreen.Name
+    Height: =48
+    LogoVisibility: =true
+    ProfileVisibility: =true
+    SearchBoxVisibility: =App.ActiveScreen.Width>=640
+    SearchBoxX: =If(App.ActiveScreen.Size>3,315,272)
+    SearchTextOut: =txtSearchBox.Text
+    Theme: |-
+        =//AppTheme
+        {
+            palette: {
+                themePrimary: "#00703c",
+                themeLighterAlt: "#eff9f5",
+                themeLighter: "#c3e8d7",
+                themeLight: "#95d4b6",
+                themeTertiary: "#44a97a",
+                themeSecondary: "#10814c",
+                themeDarkAlt: "#006536",
+                themeDark: "#00552d",
+                themeDarker: "#003f22",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(0,121,49,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    0,
+                    112,
+                    60,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    0,
+                    112,
+                    60,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    0,
+                    112,
+                    60,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    0,
+                    112,
+                    60,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    0,
+                    112,
+                    60,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    0,
+                    112,
+                    60,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    0,
+                    112,
+                    60,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    0,
+                    112,
+                    60,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    0,
+                    112,
+                    60,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    0,
+                    112,
+                    60,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    txtSearchBox As text:
+        AccessibleLabel: ="Search box"
+        BorderColor: =RGBA(0, 18, 107, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Clear: =true
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =32
+        HoverBorderColor: =RGBA(0, 18, 107, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        PaddingLeft: =48
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =10.5
+        Visible: =cmpLayoutHeader.SearchBoxVisibility
+        Width: =If(App.ActiveScreen.Width>700,Parent.Width/3,If(App.ActiveScreen.Width>=Parent.Width/3,308,0))
+        X: =cmpLayoutHeader.SearchBoxX
+        Y: =8
+        ZIndex: =2
+
+    lblScreenNameOrCurrentItem As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =ColorValue(cmpLayoutHeader.Theme.palette.white)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =Parent.Height
+        PaddingBottom: =0
+        PaddingLeft: =8
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =If(App.ActiveScreen.Width<640,10.5,12)
+        Text: =cmpLayoutHeader.HeaderRightText
+        Width: =120
+        X: =imgAvatar.Width
+        ZIndex: =5
+
+    imgAvatar As image:
+        AccessibleLabel: ="The Nature Consevancy avatar"
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =48
+        HoverBorderColor: =IcoTNCSite.HoverBorderColor
+        HoverFill: =IcoTNCSite.HoverFill
+        Image: =cmpLayoutHeader.HeaderImage
+        OnSelect: |-
+            =Launch("https://thenatureconservancy462.sharepoint.com/SitePages/Home.aspx")
+        PaddingBottom: =12
+        PaddingLeft: =12
+        PaddingRight: =12
+        PaddingTop: =12
+        TabIndex: =0
+        Visible: =cmpLayoutHeader.LogoVisibility
+        Width: =48
+        ZIndex: =6
+
+    IcoTNCSite As icon.Person:
+        AccessibleLabel: ="Link to The Nature Conservancy SharePoint Sites"
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =48
+        HoverBorderColor: =cmpLayoutHeader.Theme.palette.RGBAPrimary40
+        HoverColor: =Color.Transparent
+        HoverFill: =cmpLayoutHeader.Theme.palette.RGBANeutralTertiaryAlt20
+        Icon: =Icon.Person
+        OnSelect: =Select(imgAvatar)
+        PaddingBottom: =8
+        PaddingLeft: =8
+        PaddingRight: =8
+        PaddingTop: =8
+        TabIndex: =0
+        Visible: =cmpLayoutHeader.LogoVisibility
+        Width: =48
+        X: =imgAvatar.X
+        ZIndex: =7
+
+    grpProfile As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =7
+
+        imgProfile As image:
+            AccessibleLabel: ="User profile image"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =32
+            HoverBorderColor: =IcoTNCSite.HoverFill
+            HoverFill: =IcoTNCSite.HoverFill
+            Image: =User().Image
+            OnSelect: |-
+                =Launch("https://myaccount.microsoft.com/")
+            RadiusBottomLeft: =16
+            RadiusBottomRight: =16
+            RadiusTopLeft: =16
+            RadiusTopRight: =16
+            TabIndex: =0
+            Visible: =cmpLayoutHeader.ProfileVisibility
+            Width: =32
+            X: =Parent.Width-Self.Width-8
+            Y: =8
+            ZIndex: =3
+
+        IcoProfile As icon.Person:
+            AccessibleLabel: ="Link to Delve account"
+            BorderColor: =ColorValue(cmpLayoutHeader.Theme.palette.themeDarkAlt)
+            Color: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =Parent.Height
+            HoverBorderColor: =IcoTNCSite.HoverBorderColor
+            HoverColor: =Color.Transparent
+            HoverFill: =IcoTNCSite.HoverFill
+            Icon: =Icon.Person
+            OnSelect: =Select(imgProfile)
+            TabIndex: =0
+            Visible: =cmpLayoutHeader.ProfileVisibility
+            Width: =48
+            X: =Parent.Width-Self.Width
+            ZIndex: =4
+

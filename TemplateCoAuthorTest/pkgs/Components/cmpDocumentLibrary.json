@@ -1,0 +1,57 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "cmpDocumentLibrary",
+    "TemplateGuid": "6199b9823ee64f1a8c49ae8482c16f42"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "Site_ID",
+      "Hidden": false,
+      "Name": "Site_ID",
+      "PropertyDataTypeKey": "Record",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"SiteID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "lib_Documents_ID",
+      "Hidden": false,
+      "Name": "lib_Documents_ID",
+      "PropertyDataTypeKey": "Record",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"DocumentsLibraryID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "graphAPIEndpoint",
+      "Hidden": false,
+      "Name": "graphAPIEndpoint",
+      "PropertyDataTypeKey": "Record",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"graphAPIEndPoint\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638145015468178347",
+  "Name": "6199b9823ee64f1a8c49ae8482c16f42",
+  "OverridableProperties": {},
+  "SourceLibraryId": "ea3e6953-d564-417b-9fd8-725c62257d10",
+  "SourceLibraryLogicalName": "witco_cmplibrarydocumentation_64949",
+  "TemplateOriginalName": "2081e6ad40c84fa39d06c5ec14e9adb6",
+  "Version": "638101300960951571"
+}

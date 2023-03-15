@@ -1,0 +1,1344 @@
+cmpStylesThemeColors As CanvasComponent:
+    AppTheme: =drpThemes.Selected.palette
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    NatureOrgBlues: |-
+        ={
+            palette: {
+                themePrimary: "#23487a",
+                themeLighterAlt: "#f3f6fa",
+                themeLighter: "#cfdbea",
+                themeLight: "#a9bdd7",
+                themeTertiary: "#6585af",
+                themeSecondary: "#34598a",
+                themeDarkAlt: "#20426e",
+                themeDark: "#1b385d",
+                themeDarker: "#142945",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(35,72,122,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    35,
+                    72,
+                    122,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    35,
+                    72,
+                    122,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    35,
+                    72,
+                    122,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    35,
+                    72,
+                    122,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    35,
+                    72,
+                    122,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    35,
+                    72,
+                    122,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    35,
+                    72,
+                    122,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    35,
+                    72,
+                    122,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    35,
+                    72,
+                    122,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    35,
+                    72,
+                    122,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    NatureOrgGreens: |-
+        ={
+            palette: {
+                themePrimary: "#00703c",
+                themeLighterAlt: "#eff9f5",
+                themeLighter: "#c3e8d7",
+                themeLight: "#95d4b6",
+                themeTertiary: "#44a97a",
+                themeSecondary: "#10814c",
+                themeDarkAlt: "#006536",
+                themeDark: "#00552d",
+                themeDarker: "#003f22",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(0,121,49,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    0,
+                    112,
+                    60,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    0,
+                    112,
+                    60,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    0,
+                    112,
+                    60,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    0,
+                    112,
+                    60,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    0,
+                    112,
+                    60,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    0,
+                    112,
+                    60,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    0,
+                    112,
+                    60,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    0,
+                    112,
+                    60,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    0,
+                    112,
+                    60,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    0,
+                    112,
+                    60,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    NatureOrgOranges: |-
+        ={
+            palette: {
+                themePrimary: "#8a2f1d",
+                themeLighterAlt: "#faf4f2",
+                themeLighter: "#ecd3ce",
+                themeLight: "#dcb0a8",
+                themeTertiary: "#b97061",
+                themeSecondary: "#98402e",
+                themeDarkAlt: "#7c2a1a",
+                themeDark: "#692416",
+                themeDarker: "#4d1a10",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(138,47,29,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    138,
+                    47,
+                    29,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    138,
+                    47,
+                    29,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    138,
+                    47,
+                    29,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    138,
+                    47,
+                    29,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    138,
+                    47,
+                    29,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    138,
+                    47,
+                    29,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    138,
+                    47,
+                    29,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    138,
+                    47,
+                    29,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    138,
+                    47,
+                    29,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    138,
+                    47,
+                    29,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    SPBlueTheme: |-
+        ={
+            palette: {
+                themePrimary: "#0076d6",
+                themeLighterAlt: "#f3f9fd",
+                themeLighter: "#d1e7f8",
+                themeLight: "#aad2f3",
+                themeTertiary: "#5ca8e7",
+                themeSecondary: "#1a84db",
+                themeDarkAlt: "#006ac1",
+                themeDark: "#005aa3",
+                themeDarker: "#004278",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(0,118,214,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    0,
+                    118,
+                    214,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    0,
+                    118,
+                    214,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    0,
+                    118,
+                    214,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    0,
+                    118,
+                    214,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    0,
+                    118,
+                    214,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    0,
+                    118,
+                    214,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    0,
+                    118,
+                    214,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    0,
+                    118,
+                    214,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    0,
+                    118,
+                    214,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    0,
+                    118,
+                    214,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    SpDarkGrayTheme: |-
+        ={
+            palette: {
+                themePrimary: "#5d5a58",
+                themeLighterAlt: "#f8f8f8",
+                themeLighter: "#e5e4e3",
+                themeLight: "#cecccb",
+                themeTertiary: "#9d9a98",
+                themeSecondary: "#6f6c6a",
+                themeDarkAlt: "#53504e",
+                themeDark: "#464442",
+                themeDarker: "#333231",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(93,90,88,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    93,
+                    90,
+                    88,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    93,
+                    90,
+                    88,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    93,
+                    90,
+                    88,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    93,
+                    90,
+                    88,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    93,
+                    90,
+                    88,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    93,
+                    90,
+                    88,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    93,
+                    90,
+                    88,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    93,
+                    90,
+                    88,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    93,
+                    90,
+                    88,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    93,
+                    90,
+                    88,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    SPGreenTheme: |-
+        ={
+            palette: {
+                themePrimary: "#498205",
+                themeLighterAlt: "#f6faf0",
+                themeLighter: "#dbebc7",
+                themeLight: "#bdda9b",
+                themeTertiary: "#85b44c",
+                themeSecondary: "#5a9117",
+                themeDarkAlt: "#427505",
+                themeDark: "#386304",
+                themeDarker: "#294903",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(73,130,5,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    73,
+                    130,
+                    5,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    73,
+                    130,
+                    5,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    73,
+                    130,
+                    5,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    73,
+                    130,
+                    5,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    73,
+                    130,
+                    5,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    73,
+                    130,
+                    5,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    73,
+                    130,
+                    5,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    73,
+                    130,
+                    5,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    73,
+                    130,
+                    5,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    73,
+                    130,
+                    5,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    SPOrangeTheme: |-
+        ={
+            palette: {
+                themePrimary: "#ca5010",
+                themeLighterAlt: "#fdf7f4",
+                themeLighter: "#f6dfd2",
+                themeLight: "#efc4ad",
+                themeTertiary: "#df8f64",
+                themeSecondary: "#d06228",
+                themeDarkAlt: "#b5490f",
+                themeDark: "#993e0c",
+                themeDarker: "#712d09",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(200,80,16,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    202,
+                    80,
+                    16,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    202,
+                    80,
+                    16,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    202,
+                    80,
+                    16,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    202,
+                    80,
+                    16,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    202,
+                    80,
+                    16,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    202,
+                    80,
+                    16,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    202,
+                    80,
+                    16,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    202,
+                    80,
+                    16,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    202,
+                    80,
+                    16,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    202,
+                    80,
+                    16,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    SPPurpleTheme: |-
+        ={
+            palette: {
+                themePrimary: "#6b69d6",
+                themeLighterAlt: "#f8f8fd",
+                themeLighter: "#e5e4f8",
+                themeLight: "#cecef3",
+                themeTertiary: "#a1a0e7",
+                themeSecondary: "#7a79db",
+                themeDarkAlt: "#605ec1",
+                themeDark: "#5150a3",
+                themeDarker: "#3c3b78",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(107,105,214,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    107,
+                    105,
+                    214,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    107,
+                    105,
+                    214,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    107,
+                    105,
+                    214,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    107,
+                    105,
+                    214,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    107,
+                    105,
+                    214,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    107,
+                    105,
+                    214,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    107,
+                    105,
+                    214,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    107,
+                    105,
+                    214,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    107,
+                    105,
+                    214,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    107,
+                    105,
+                    214,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    SPRedTheme: |-
+        ={
+            palette: {
+                themePrimary: "#d13438",
+                themeLighterAlt: "#fdf6f6",
+                themeLighter: "#f8dadb",
+                themeLight: "#f1bbbd",
+                themeTertiary: "#e37d81",
+                themeSecondary: "#d7494e",
+                themeDarkAlt: "#bc2f34",
+                themeDark: "#9f282c",
+                themeDarker: "#751d20",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(209,52,56,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    209,
+                    52,
+                    56,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    209,
+                    52,
+                    56,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    209,
+                    52,
+                    56,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    209,
+                    52,
+                    56,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    209,
+                    52,
+                    56,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    209,
+                    52,
+                    56,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    209,
+                    52,
+                    56,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    209,
+                    52,
+                    56,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    209,
+                    52,
+                    56,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    209,
+                    52,
+                    56,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    SPTealTheme: |-
+        ={
+            palette: {
+                themePrimary: "#03787c",
+                themeLighterAlt: "#f0f9fa",
+                themeLighter: "#c5e9ea",
+                themeLight: "#98d6d8",
+                themeTertiary: "#49aeb1",
+                themeSecondary: "#13898d",
+                themeDarkAlt: "#026d70",
+                themeDark: "#025c5f",
+                themeDarker: "#014446",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(3,120,124,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    3,
+                    120,
+                    124,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    3,
+                    120,
+                    124,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    3,
+                    120,
+                    124,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    3,
+                    120,
+                    124,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    3,
+                    120,
+                    124,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    3,
+                    120,
+                    124,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    3,
+                    120,
+                    124,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    3,
+                    120,
+                    124,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    3,
+                    120,
+                    124,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    3,
+                    120,
+                    124,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),RGBANeutralLighter10: RGBA(
+                    243,
+                    242,
+                    241,
+                    .1
+                ),RGBANeutralLighter30: RGBA(
+                    243,
+                    242,
+                    241,
+                    .3
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    StandardTNCColors: |-
+        ={ palette: {
+        OakGreen: "#00703c", 
+        LeafGreen: "#49a942", 
+        Spring: "#a0c04d", 
+        Indigo: "#23487a", 
+        Lake: "#0096d6", 
+        Plum: "#90214a", 
+        Crimson: "#c5351c", 
+        RedRock: "#f3901d", 
+        YellowField: "#ffe14f", 
+        Mallard: "#007932", 
+        Clover: "#46812b", 
+        Spruce: "#4d632d", 
+        Everglade: "#5e8827", 
+        Moss: "#6a8a22", 
+        Olive: "#737c29", 
+        Acadia: "#95ba79", 
+        Lime: "#cdc90f", 
+        DeepWaters: "#005387", 
+        TrueBlue: "#1b75bc", 
+        Cirrus: "#3a89b4", 
+        Frost: "#5e94b6", 
+        Marine: "#009ecb", 
+        Aqua: "#00a0af", 
+        Glacier: "#b7dee0", 
+        Iris: "#46166b", 
+        Carnelian: "#8a2f1d", 
+        Rust: "#c95c1a", 
+        Ochre: "#a88701", 
+        Nutmeg: "#b48724", 
+        Butternut: "#e39717", 
+        Gold: "#e6b120", 
+        Cocoa: "#623c25", 
+        Canyon: "#80561b", 
+        Storm: "#7e6a65", 
+        Driftwood: "#d2bfaa", 
+        Beach: "#dac792", 
+        Icicle: "#e4e6d7", 
+        Mudstone: "#989482", 
+        Sandstone: "#f7e7c9", 
+        DrySage: "#afb087", 
+        SharePointMenuGray: "#404041", 
+        FluentGray: "#f3f3f1", 
+        FluentGrayHover: "#f3f3f1" 
+        }}
+    TNCTheme: |-
+        ={
+            palette: {
+                themePrimary: "#6b69d6",
+                themeLighterAlt: "#f8f8fd",
+                themeLighter: "#e5e4f8",
+                themeLight: "#cecef3",
+                themeTertiary: "#a1a0e7",
+                themeSecondary: "#7a79db",
+                themeDarkAlt: "#605ec1",
+                themeDark: "#5150a3",
+                themeDarker: "#3c3b78",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(0,121,49,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    107,
+                    105,
+                    214,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    107,
+                    105,
+                    214,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    107,
+                    105,
+                    214,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    107,
+                    105,
+                    214,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    107,
+                    105,
+                    214,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    107,
+                    105,
+                    214,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    107,
+                    105,
+                    214,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    107,
+                    105,
+                    214,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    107,
+                    105,
+                    214,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    107,
+                    105,
+                    214,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =2
+
+    drpThemes As dropdown:
+        AccessibleLabel: ="hidden"
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =2
+        ChevronBackground: =RGBA(128, 128, 128, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronFill: =RGBA(255, 255, 255, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 0, 0, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: ="NatureOrgGreens"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =70
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(230, 230, 230, 1)
+        Items: |-
+            =Table(
+                {Theme: "TNCTheme",palette: { palette:  { themePrimary: "#6b69d6", themeLighterAlt: "#f8f8fd", themeLighter: "#e5e4f8", themeLight: "#cecef3", themeTertiary: "#a1a0e7", themeSecondary: "#7a79db", themeDarkAlt: "#605ec1", themeDark: "#5150a3", themeDarker: "#3c3b78", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff"}}},
+            
+                {Theme: "NatureOrgBlues",palette: { palette:  { themePrimary: "#23487a", themeLighterAlt: "#f3f6fa", themeLighter: "#cfdbea", themeLight: "#a9bdd7", themeTertiary: "#6585af", themeSecondary: "#34598a", themeDarkAlt: "#20426e", themeDark: "#1b385d", themeDarker: "#142945", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(35,72,122,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+            
+                {Theme: "NatureOrgGreens",palette: { palette: { themePrimary: "#00703c", themeLighterAlt: "#eff9f5", themeLighter: "#c3e8d7", themeLight: "#95d4b6", themeTertiary: "#44a97a", themeSecondary: "#10814c", themeDarkAlt: "#006536", themeDark: "#00552d", themeDarker: "#003f22", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff", gradientPrimary:"rgba(0,121,49,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "NatureOrgOranges",palette: { palette: { themePrimary: "#8a2f1d", themeLighterAlt: "#faf4f2", themeLighter: "#ecd3ce", themeLight: "#dcb0a8", themeTertiary: "#b97061", themeSecondary: "#98402e", themeDarkAlt: "#7c2a1a", themeDark: "#692416", themeDarker: "#4d1a10", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(138,47,29,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "SPBlueTheme",palette: { palette: { themePrimary: "#0076d6", themeLighterAlt: "#f3f9fd", themeLighter: "#d1e7f8", themeLight: "#aad2f3", themeTertiary: "#5ca8e7", themeSecondary: "#1a84db", themeDarkAlt: "#006ac1", themeDark: "#005aa3", themeDarker: "#004278", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(0,118,214,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "SpDarkGrayTheme",palette: { palette: { themePrimary: "#5d5a58", themeLighterAlt: "#f8f8f8", themeLighter: "#e5e4e3", themeLight: "#cecccb", themeTertiary: "#9d9a98", themeSecondary: "#6f6c6a", themeDarkAlt: "#53504e", themeDark: "#464442", themeDarker: "#333231", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(93,90,88,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "SPGreenTheme",palette: { palette: { themePrimary: "#498205", themeLighterAlt: "#f6faf0", themeLighter: "#dbebc7", themeLight: "#bdda9b", themeTertiary: "#85b44c", themeSecondary: "#5a9117", themeDarkAlt: "#427505", themeDark: "#386304", themeDarker: "#294903", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(73,130,5,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "SPOrangeTheme",palette: { palette: { themePrimary: "#ca5010", themeLighterAlt: "#fdf7f4", themeLighter: "#f6dfd2", themeLight: "#efc4ad", themeTertiary: "#df8f64", themeSecondary: "#d06228", themeDarkAlt: "#b5490f", themeDark: "#993e0c", themeDarker: "#712d09", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(200,80,16,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "SPPurpleTheme",palette: { palette: { themePrimary: "#6b69d6", themeLighterAlt: "#f8f8fd", themeLighter: "#e5e4f8", themeLight: "#cecef3", themeTertiary: "#a1a0e7", themeSecondary: "#7a79db", themeDarkAlt: "#605ec1", themeDark: "#5150a3", themeDarker: "#3c3b78", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(107,105,214,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "SPRedTheme",palette: { palette: { themePrimary: "#d13438", themeLighterAlt: "#fdf6f6", themeLighter: "#f8dadb", themeLight: "#f1bbbd", themeTertiary: "#e37d81", themeSecondary: "#d7494e", themeDarkAlt: "#bc2f34", themeDark: "#9f282c", themeDarker: "#751d20", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(209,52,56,1)", gradientDark:"rgba(26,26,26,1)"}}},
+            
+                {Theme: "SPTealTheme",palette: { palette: { themePrimary: "#03787c", themeLighterAlt: "#f0f9fa", themeLighter: "#c5e9ea", themeLight: "#98d6d8", themeTertiary: "#49aeb1", themeSecondary: "#13898d", themeDarkAlt: "#026d70", themeDark: "#025c5f", themeDarker: "#014446", neutralLighterAlt: "#faf9f8", neutralLighter: "#f3f2f1", neutralLight: "#edebe9", neutralQuaternaryAlt: "#e1dfdd", neutralQuaternary: "#d0d0d0", neutralTertiaryAlt: "#c8c6c4", neutralTertiary: "#a19f9d", neutralSecondary: "#605e5c", neutralPrimaryAlt: "#3b3a39", neutralPrimary: "#323130", neutralDark: "#201f1e", black: "#000000", white: "#ffffff",gradientPrimary:"rgba(3,120,124,1)", gradientDark:"rgba(26,26,26,1)"}}}
+               )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(179, 179, 179, 1)
+        SelectionColor: =RGBA(255, 255, 255, 1)
+        SelectionFill: =RGBA(179, 179, 179, 1)
+        Size: =21
+        Visible: =false
+        Width: =557
+        X: =40
+        Y: =40
+        ZIndex: =1
+

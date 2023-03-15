@@ -1,0 +1,5 @@
+"'Styles TNC Colors' As screen":
+
+    cmpStylesTNCColors_CLRS As cmpStylesTNCColors:
+        ZIndex: =1
+

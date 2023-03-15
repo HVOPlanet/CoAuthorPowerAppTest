@@ -1,0 +1,248 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |+
+        =//Collect the active directory information of the current user such as name,job title, id, and email address
+            Set(
+                    varUser,
+                    {myProfile: Office365Users.MyProfileV2()}
+                );
+        
+        //LAYOUT
+            Set(varLayout,"FullWidth");
+            //Set(varLayout,"FormWidth");
+        
+            /*To embed in SharePoint add "&embed=embed" to the end of app url */
+            Set(Global,{Visibility:IsBlankOrError(Param("embed"))});
+        
+            /*To embed in Teams add "&teams=teams" to the end of app url */
+            Set(teamsVisibility,{Visibility:IsBlankOrError(Param("teams"))});
+        
+        
+        
+        //STYLES
+            //Fonts
+                Set(Body,cmpStylesFontBody_THM);
+                Set(FormsStyle,cmpStylesFontForms_THM);
+        
+        
+        //Imports colors from cmStandrdStyle_Color component
+        Set(
+            AppTheme,
+            cmpStylesThemeColors_THM.NatureOrgGreens
+        );
+        
+        
+        Set(
+            AppThemeJson,
+            JSON(
+                AppTheme,
+                JSONFormat.IndentFour
+            )
+        );
+        
+        //Apply above colors to objects
+        //Set(currentColor,ColorValue(AppTheme.palette.themePrimary));
+        Set(Colors, {
+            Primary1:ColorValue(AppTheme.palette.themePrimary),
+            Primary2: ColorValue(AppTheme.palette.themeDark), 
+            Primary3: ColorValue(AppTheme.palette.themeLight),
+            Primary4: ColorValue(AppTheme.palette.themeSecondary),
+            Primary5: ColorValue(AppTheme.palette.neutralPrimary),
+            Primary6: ColorValue(AppTheme.palette.neutralPrimaryAlt), 
+            Supplemental1: ColorValue(AppTheme.palette.themeLighter),
+            Neutral1: ColorValue(AppTheme.palette.neutralLight),
+            Neutral2: ColorValue(AppTheme.palette.neutralLighter),
+            Neutral3: ColorValue(AppTheme.palette.neutralTertiary),
+            TextMain: ColorValue(AppTheme.palette.neutralPrimary), 
+            TextID: ColorValue(AppTheme.palette.themeDarkAlt),    
+            Black: ColorValue(AppTheme.palette.black),           
+            Gray: ColorValue(AppTheme.palette.neutralLighter),      
+            LightGray: ColorValue( "#F5F5F5"), 
+            HoverGray: ColorValue(AppTheme.palette.neutralLighter), 
+            White: ColorValue(AppTheme.palette.white),      
+            FocusedBodyColor:ColorValue(AppTheme.palette.neutralSecondary)
+        });
+        Set(Input, {
+                BorderColor: Colors.Neutral3,    
+                BorderThickness: 1,          
+                FocusedBorderThickness: 0,   
+                Color: Colors.Primary1,
+                Fill:Colors.HoverGray
+            });
+        Set(CheckboxRadio, {
+                BorderColor: Colors.Primary2, 
+                Fill: RGBA(0, 0, 0, 0)        
+            });
+        Set(Icons, {
+                Color: Colors.Primary2 
+            });
+        Set(Button, {
+                BorderDarkness: -0,              
+                Radius: 0,                      
+                DisabledPercent: 50,            // colorfade percentage of disabled border, color & fill (all buttons)
+                HoverPercent: -35,              // colorfade percentage of hover border & fill (all buttons but link)
+                HoverColorPercent: -25,         // colorfade percentage of hover color (only link & outline buttons)
+                PressedPercent: -20,            // colorfade percentage of pressed border & fill (all buttons but link & outline)
+                Color: Color.White,            // for default buttons (d Colors.White)
+                Fill: Colors.Primary2,          // for default buttons (d Colors.Primary1)
+                Fill2: Colors.Neutral1,
+                FillDanger: Color.Red, // for danger buttons
+                Width: 120,                     
+                Height:40,
+                NavigationBackX: 1000,
+                NavigationBackY: 625,
+                NavigationNextX: 1180,
+                NavigationNextY: 625
+                
+            });  
+        Set(Toggle, {
+                Fill: Colors.Neutral3 
+            });
+        /*
+        Set(DataTable, {
+                HeadingBold: true,          
+                HeadingColorsInverted: true 
+            });
+        */
+         Set(Heading, {
+                Font:Body.FontBody.Font,
+                FontWeight:FormsStyle.FontBody.FontWeight,
+                Color:FormsStyle.FontBody.Color,
+                LineColor: AppTheme.palette.RGBAPrimary100,
+                LineHeight: 6,
+                LineWidth: 80,
+                Size1: 28,
+                Size2: 24,
+                Size3: 18,
+                Size4: 16,
+                Size5: 14,
+                Size6: 12
+            });
+        
+        //APP INFORMATION: Set the app version publish date so that it appears in the footer
+        
+        /*Set(
+            varAppTimeStamp,"Version: "&
+            PowerAppsforMakers.GetApp(
+            LookUp(
+                PowerAppsforMakers.GetApps().value,
+                properties.displayName = "tmplt_Fluent_1920x1200",
+                name
+            )
+        ).properties.appVersion
+        );*/
+        
+        /* The API throttles at 100 so currently this will not work with any app published over 100 times
+        Set(varAppVersion,
+            CountRows(
+                PowerAppsforMakers.GetAppVersions(
+                    First(
+                        Filter(
+                            PowerAppsforMakers.GetApps().value,properties.displayName = "TNC Theme Template - Minimal")
+                        ).name
+                        ).value
+                    )
+            );
+        */
+        
+        
+        /*The actions below are to access the environmental variables which requires a premium Dataverse Connection, "Environment Variable Definitions":
+        
+            Set(varCompanyName,LookUp('Environment Variable Values','Environment Variable Definition'.'Display Name'="CompanyName").Value);
+            Set(varCompanyAddressLine1,LookUp('Environment Variable Values','Environment Variable Definition'.'Display Name'="CompanyAddressLine1").Value);
+            Set(varCompanyAddressLine2,LookUp('Environment Variable Values','Environment Variable Definition'.'Display Name'="CompanyAddressLine2").Value);
+            Set(varCompanyPhone,LookUp('Environment Variable Values','Environment Variable Definition'.'Display Name'="CompanyPhone").Value);
+            Set(varCompanySite,LookUp('Environment Variable Values','Environment Variable Definition'.'Display Name'="CompanySite").Value);
+        
+        */
+        
+        //NAVIGATION
+        
+        
+        ClearCollect(colMenuNav,
+        
+            {
+                MenuLabel: "Gallery",
+                MenuIcon: Icon.Home,
+                MenuScreenNavigate: 'Gallery Screen',
+                MenuID: 1
+            },
+            {
+                MenuLabel: "Form",
+                MenuIcon: Icon.Edit,
+                MenuScreenNavigate: 'Edit Screen',
+                MenuID: 2,
+                SubMenu: Table()
+            },
+            {
+                MenuLabel: "Email",
+                MenuIcon: Icon.Mail,
+                MenuScreenNavigate: 'Email Screen',
+                MenuID: 3,
+                SubMenu: Table()
+            },
+            {
+                MenuLabel: "Print",
+                MenuIcon: Icon.Print,
+                MenuScreenNavigate: 'Print Screen',
+                MenuID: 4,
+                SubMenu: Table()
+            },
+            
+            {
+                MenuLabel: "Landing Page ",
+                MenuIcon: Icon.Tablet,
+                MenuScreenNavigate: 'Landing Page',
+                MenuID: 6,
+                SubMenu: Table()
+            });
+        
+        
+        
+        //Sample Collection
+        
+        ClearCollect(colSample,
+            {Item: "Item 01", Detail:"Detail01",ID:"1", Icon:Icon.Add},
+            {Item: "Item 02", Detail:"Detail02",ID:"2",Icon:Icon.Add},
+            {Item: "Item 03", Detail:"Detail03",ID:"3",Icon:Icon.Add},
+            {Item: "Item 04", Detail:"Detail04",ID:"4",Icon:Icon.Add},
+            {Item: "Item 05", Detail:"Detail05",ID:"5",Icon:Icon.Add},
+            {Item: "Item 06", Detail:"Detail06",ID:"6",Icon:Icon.Add},
+            {Item: "Item 07", Detail:"Detail07",ID:"7",Icon:Icon.Add},
+            {Item: "Item 08", Detail:"Detail08",ID:"8",Icon:Icon.Add},
+            {Item: "Item 09", Detail:"Detail09",ID:"9",Icon:Icon.Add},
+            {Item: "Item 10", Detail:"Detail10",ID:"10",Icon:Icon.Add},
+            {Item: "Item 11", Detail:"Detail11",ID:"11",Icon:Icon.Add},
+            {Item: "Item 12", Detail:"Detail12",ID:"12",Icon:Icon.Add},
+            {Item: "Item 13", Detail:"Detail13",ID:"13",Icon:Icon.Add},
+            {Item: "Item 14", Detail:"Detail14",ID:"14",Icon:Icon.Add},
+            {Item: "Item 15", Detail:"Detail15",ID:"15",Icon:Icon.Add},
+            {Item: "Item 16", Detail:"Detail16",ID:"16"},
+            {Item: "Item 17", Detail:"Detail17",ID:"17"},
+            {Item: "Item 18", Detail:"Detail18",ID:"18"}
+        );
+        
+        ClearCollect(colContacts, Filter(List_Contacts,Show.Value="Yes"));ClearCollect(ColContacts2, ShowColumns(colContacts,"Title","FirstNm","MiddleNm","LastNm","Suffix","Company","Dept","JobTtl","Email"));
+        Set(varCurrentContact,First(galHome_HM.AllItems));
+        
+        Set(varSiteID,"372d49b4-9a73-45c3-b988-fa1f0770a8f3");
+        Set(varDocumentsLibraryID, "b!tEktN3Oaw0W5iPofB3Co8yAIRLJMdllLnQQyM_vCOxngn9Ndhd0WTIbe8itnkCcP");
+        
+        /*----------App Version Check----------*/
+        
+        Set(varAppVersion,lblAppVersion_LP.Text);
+        
+        ClearCollect(colAppVersionVerify,Last(List_AppVersion));
+        
+        If(varAppVersion=lblAppVersionVerify.Text,Blank(),Notify("The App Version is not the most recent. Refresh the screen. You many need to refresh more than once",NotificationType.Error,600));
+        
+        
+    SizeBreakpoints: =[320,640,960,1280,1600,1920,2240]
+    StartScreen: |-
+        =Switch(Param("screenname"),
+            "homescreen",'Gallery Screen',
+            "editscreen",'Edit Screen',
+            "emailscreen",'Email Screen',
+            "printscreen",'Print Screen',
+            'Landing Page')
+

@@ -1,0 +1,48 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "cmpLayoutGradientBackground",
+    "TemplateGuid": "f603def02eaa42e7bc5bd1bc9d270433"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "cssGradient",
+      "Hidden": false,
+      "Name": "cssGradient",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Theme",
+      "Hidden": false,
+      "Name": "Theme",
+      "PropertyDataTypeKey": "Record",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"palette\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"RGBANeutralLighter\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBANeutralPrimary\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBANeutralTertiaryAlt20\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary10\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary100\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary20\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary30\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary40\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary50\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary60\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary70\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary80\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RGBAPrimary90\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"black\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"gradientDark\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"gradientPrimary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralDark\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralLight\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralLighter\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralLighterAlt\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralPrimary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralPrimaryAlt\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralQuaternary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralQuaternaryAlt\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralSecondary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralTertiary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"neutralTertiaryAlt\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeDark\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeDarkAlt\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeDarker\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeLight\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeLighter\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeLighterAlt\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themePrimary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeSecondary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"themeTertiary\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"white\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638145015468010862",
+  "Name": "f603def02eaa42e7bc5bd1bc9d270433",
+  "OverridableProperties": {},
+  "SourceLibraryId": "adda98bc-59d8-45f1-92ae-a0dffd439b2d",
+  "SourceLibraryLogicalName": "witco_cmplibrarylayout_64ecc",
+  "TemplateOriginalName": "e649ba4f067c448d98ca8c1d3ee887eb",
+  "Version": "638061195929614837"
+}

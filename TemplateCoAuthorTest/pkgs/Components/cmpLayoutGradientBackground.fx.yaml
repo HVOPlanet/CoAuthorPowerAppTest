@@ -1,0 +1,133 @@
+cmpLayoutGradientBackground As CanvasComponent:
+    cssGradient: |
+        =
+        /*
+        "<div style=""background: rgb(218,199,146);
+        background: radial-gradient(circle,"&AppTheme.palette.gradientPrimary&" 40%, "&AppTheme.palette.gradientDark&" 100%); width:100%;height:" & App.DesignHeight - 1 &"px;""></div>"
+        */
+        
+        
+        "<div style=""background: rgb(218,199,146);
+        background: radial-gradient(circle, "&cmpLayoutGradientBackground.Theme.palette.neutralLighter&" 4%, "&cmpLayoutGradientBackground.Theme.palette.neutralLighter&" 55%, rgba(0,0,0,.05) 98%); width:100%;height:" & App.DesignHeight - 1 &"px;""></div>"
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =1170
+    Theme: |-
+        =//AppTheme
+        {
+            palette: {
+                themePrimary: "#00703c",
+                themeLighterAlt: "#eff9f5",
+                themeLighter: "#c3e8d7",
+                themeLight: "#95d4b6",
+                themeTertiary: "#44a97a",
+                themeSecondary: "#10814c",
+                themeDarkAlt: "#006536",
+                themeDark: "#00552d",
+                themeDarker: "#003f22",
+                neutralLighterAlt: "#faf9f8",
+                neutralLighter: "#f3f2f1",
+                neutralLight: "#edebe9",
+                neutralQuaternaryAlt: "#e1dfdd",
+                neutralQuaternary: "#d0d0d0",
+                neutralTertiaryAlt: "#c8c6c4",
+                neutralTertiary: "#a19f9d",
+                neutralSecondary: "#605e5c",
+                neutralPrimaryAlt: "#3b3a39",
+                neutralPrimary: "#323130",
+                neutralDark: "#201f1e",
+                black: "#000000",
+                white: "#ffffff",
+                gradientPrimary: "rgba(0,121,49,1)",
+                gradientDark: "rgba(26,26,26,1)",
+                RGBAPrimary100: RGBA(
+                    0,
+                    112,
+                    60,
+                    1
+                ),
+                RGBAPrimary90: RGBA(
+                    0,
+                    112,
+                    60,
+                    .9
+                ),
+                RGBAPrimary80: RGBA(
+                    0,
+                    112,
+                    60,
+                    .8
+                ),
+                RGBAPrimary70: RGBA(
+                    0,
+                    112,
+                    60,
+                    .7
+                ),
+                RGBAPrimary60: RGBA(
+                    0,
+                    112,
+                    60,
+                    .6
+                ),
+                RGBAPrimary50: RGBA(
+                    0,
+                    112,
+                    60,
+                    .5
+                ),
+                RGBAPrimary40: RGBA(
+                    0,
+                    112,
+                    60,
+                    .4
+                ),
+                RGBAPrimary30: RGBA(
+                    0,
+                    112,
+                    60,
+                    .3
+                ),
+                RGBAPrimary20: RGBA(
+                    0,
+                    112,
+                    60,
+                    .2
+                ),
+                RGBAPrimary10: RGBA(
+                    0,
+                    112,
+                    60,
+                    .1
+                ),
+                RGBANeutralLighter: RGBA(
+                    243,
+                    242,
+                    241,
+                    1
+                ),
+                RGBANeutralPrimary: RGBA(
+                    50,
+                    49,
+                    48,
+                    1
+                ),
+                RGBANeutralTertiaryAlt20:RGBA(
+                    200,198,196,.2)
+            }
+        }
+    Width: =2080
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    htmGradient As htmlViewer:
+        Height: =App.Height
+        HtmlText: =cmpLayoutGradientBackground.cssGradient
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =24
+        Width: =App.Width
+        ZIndex: =1
+

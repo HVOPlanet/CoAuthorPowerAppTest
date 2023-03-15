@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "e5165a0e-fda2-44af-8c14-4ddb952ae854",
+    "Name": "HTTPRequestUpload",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "a4a497e1-8ab0-ed11-83fe-000d3a30ec20"
+  }
+]
